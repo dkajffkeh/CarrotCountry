@@ -26,7 +26,6 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 1200px;
-    border: 1px solid red;
     height: 100%;
 
 }
@@ -68,7 +67,7 @@ a {
 }
 
 .menu_bar table tr td {
-
     padding-left: 10px;
-    margin-left: 50px
+
+
 }
