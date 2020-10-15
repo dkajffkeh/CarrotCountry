@@ -107,6 +107,25 @@ a {
     
 }
 
+#board_button_wrapper {
+    border:1px solid red;
+    width:1100px;
+    height:250px;
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#board_button_wrapper > div {
+    border:1px solid black;
+    height:100%;
+    width:45%;
+}
+
+
+
+
 
 #footerbar 
 {
