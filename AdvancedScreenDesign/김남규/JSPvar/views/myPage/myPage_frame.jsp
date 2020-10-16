@@ -22,8 +22,11 @@
         border:1px solid blue; /*뼈대 나중에 지움*/
         height:100%; float:left;
     }
-    .myPageWrapper_content{width:85%;}
-
+    .myPageWrapper_content{width:85%; padding:10px;}
+    
+	.myPageWrapper_content_1>h1{
+       color:gray;
+     }
 
     </style>
     
@@ -44,11 +47,20 @@
 <!----------myPageNavBar include 영역 끝---------->
         
 	<div class="myPageWrapper_content">
+	<div class="myPageWrapper_content_1">
+
+<!--********************************페이지 title***********************************-->
+		<h1>타이틀 영역</h1>
+<!--********************************페이지 title***********************************-->
+        <hr>
+    </div>
 <!--********************************CONTENT영역!!!!***********************************-->
-<!-- 화면의 파란부분 -->
-	<h1>글쓰기~~~~~~~~~~~~~~</h1>
-	<hr>
-	<h1>치킨</h1>
+	<h1>내용 영역 ....</h1>
+
+
+
+
+
 <!--********************************CONTENT영역!!!!***********************************-->
 	</div>
 </div>
