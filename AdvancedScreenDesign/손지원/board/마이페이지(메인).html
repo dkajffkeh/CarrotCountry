@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    .outer{margin:auto;
+           margin-top:100px;
+           margin-left:400px;
+           width:1000px;
+    }
+    .top{
+        border:1px solid green;
+        padding:10px;
+        width: 1000px;
+        height:200px;
+        margin-left:100px;
+    }
+    .top_1{
+        width:30%;
+        height:100%;
+        float:left;
+    }
+    .top_2{
+        width:60%;
+        height:100%;
+        float:left;
+        
+    }
+    .top_3{
+        width:10%;
+        height:100%;
+        float:left;
+        line-height:30px;
+        
+    }
+    .top_2>span{
+        float:left; 
+        padding:10px;
+        margin:30px;
+        font-size:20px;
+    }
+    .left{
+        margin-left:50px;
+        border: 1px solid green;
+        width:40%;
+        height:400px;
+        padding:20px;
+        margin-left:100px;
+        
+    }
+    .left>table{
+        font-size:15px;
+        margin:auto;
+    }
+    td{
+        width:80px;
+        height:40px;
+    }
+    .right{
+        width:40%;
+        float:right;
+        padding:30px;
+        margin:10px;
+        font-size:20px;
+       
+    }
+    .right_1{
+        margin:10px;
+        padding:50px;
+    }
+    .right>button{
+        margin:10px;
+        float:right
+    }
+    
+    
+    
+
+  </style>
+ 
+
+</head>
+<body>
+    <!-- 메뉴바 포함해야함 -->
+
+    <div class="outer">
+        <br>
+        <h1>회원정보</h1>
+         <hr color="gray">
+         <br><br><br><br>
+         <div class="top">
+            <div class="top_1">
+                <img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
+                <input type="file" name="profile" id="profile">
+            </div>
+            <div class="top_2">
+                <span><h3>구매/판매</h3>xx 건</span>
+                <span><h3>공동구매</h3>xx 건</span>
+                <span><h3>문의</h3>xx 건</span>    
+            </div>
+           <div class="top_3">
+            <button type="button"class="btn btn-secondary ">회원 정보 수정</button><br><br>
+            <button type="button" class="btn btn-secondary ">비밀번호 변경</button>
+           </div>
+        </div>
+        <br><br><br><br>
+         <div class="left">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td>xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>성함</td>
+                        <td>xxx</td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>xx</td>
+                    </tr>
+                    <tr>
+                        <td>생년월일</td>
+                        <td>xxxx-xx-xx</td>
+                    </tr>
+                    <tr>
+                        <td>닉네임</td>
+                        <td>xx</td>
+                    </tr>
+                    <tr>
+                        <td>연락처</td>
+                        <td>xxxxxx</td>
+                    </tr>
+                    <tr>
+                        <td>주소</td>
+                        <td>xxxxxxxx</td>
+                    </tr>
+                    <tr>
+                        <td>E-Mail</td>
+                        <td>xxxxxx</td>
+                    </tr>
+                </table>
+         </div>
+         <div class="right">
+            <h3>배송지 등록 정보</h3> 
+
+            <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+            <button type="button" class="btn btn-secondary btn-sm">등록</button>
+
+            <div class="right_1">
+            <input type="checkbox" name="delivery" id="address1" value="address1">
+            배송지1 ) xxxxxxxxxxxxxxxxxxxxxx
+            <br><br><input type="checkbox" name="delivery" id="address2" value="address2">
+            배송지2 ) xxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br><br><input type="checkbox" name="delivery" id="address3" value="address3">
+            배송지3 ) xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </div>
+
+         </div>
+
+
+    </div>
+    
+
+
+</body>
+</html>
