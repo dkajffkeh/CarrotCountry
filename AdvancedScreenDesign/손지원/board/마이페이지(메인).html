@@ -11,8 +11,6 @@
 
   <style>
     .outer{margin:auto;
-           margin-top:100px;
-           margin-left:400px;
            width:1000px;
     }
     .top{
@@ -48,7 +46,7 @@
     }
     .left{
         margin-left:50px;
-        border: 1px solid green;
+        border: 2px solid green;
         width:40%;
         height:400px;
         padding:20px;
@@ -88,29 +86,31 @@
 
 </head>
 <body>
-    <!-- 메뉴바 포함해야함 -->
-
     <div class="outer">
         <br>
-        <h1>회원정보</h1>
+        <h2>회원정보</h2>
          <hr color="gray">
          <br><br><br><br>
          <div class="top">
+             <!-- 프로필 사진 -->
             <div class="top_1">
                 <img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
                 <input type="file" name="profile" id="profile">
             </div>
+            <!-- 3가지 건수 노출부분 -->
             <div class="top_2">
                 <span><h3>구매/판매</h3>xx 건</span>
                 <span><h3>공동구매</h3>xx 건</span>
                 <span><h3>문의</h3>xx 건</span>    
             </div>
+            <!-- 버튼 2개 부분 -->
            <div class="top_3">
             <button type="button"class="btn btn-secondary ">회원 정보 수정</button><br><br>
             <button type="button" class="btn btn-secondary ">비밀번호 변경</button>
            </div>
         </div>
         <br><br><br><br>
+            <!--회원정보 상자  -->
          <div class="left">
                 <table>
                     <tr>
@@ -147,6 +147,7 @@
                     </tr>
                 </table>
          </div>
+         <!-- 배송지 정보  -->
          <div class="right">
             <h3>배송지 등록 정보</h3> 
 
