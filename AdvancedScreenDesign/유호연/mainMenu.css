@@ -1,3 +1,11 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +17,14 @@
 }
 
 
-a {
-    text-decoration: none;
-}
 
+body {
+    min-height: 100%;
+}
+/*   <!-- ===============================최 상단 bar  ======================= -->       */
 .navbar_Wrapper {
     background-color: orange;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,21 +87,25 @@ a {
     margin-left: 50px
 }
 
+/*   <!-- ===============================최 상단 bar  ======================= -->       */
+
+
+
+/*   <!-- ============= 인기 게시물 썸내일 사진 display  ====================== --> */
 .banner_Wrapper {
     width:1100px;
     height:300px;
-    border:1px solid red;
+    
     margin:auto;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+   
 }
 
 .pop_banner {
-
     width:45%;
-    border:1px solid red;
     background-color: orange;
     display: flex;
     justify-content: center;
@@ -108,79 +121,146 @@ a {
     
 }
 
+/*   <!-- ============= 인기 게시물 썸내일 사진 display  ====================== --> */
+
+
+/* <!-- =============================== 중고게시판 공동구매 게시판 버튼  ======================= --> */
+
 #board_button_wrapper {
-    margin:auto;
-    border:1px solid red;
-    width:1100px;
     height:250px;
+    width:1200px;
+    margin:auto;
+    
     display: flex;
-    justify-content: space-between;
-    
-   
+    justify-content: center;
 }
 
-#board_button_wrapper > div {
-    
+.button_section_wrapper {
     height:100%;
-    width:45%;
+    width:30%;
+    border:2px solid black;
+
 }
 
-#board_button_wrapper a {
-    border:1px solid red;
+#board_button_wrapper>a {
+   text-decoration: none;
+   color:black;
+   background-color: rgb(50, 235, 59);
+   border-radius: 10px; 
+   margin-left: 15px;
+   margin-right: 15px;
+
+}
+
+.button_section_wrapper>img {
+    width:100%;
+    height:70%;
+    
+}
+
+.button_section_wrapper>p {
+    width:100%;
+    height:30%;
+    
     display: block;
-    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+
+/* <!-- =============================== 중고게시판 공동구매 게시판 버튼  ======================= --> */
+
+/* <!-- =============================== 인기 게시글 섹션  ======================= --> */
+
+#top8_board_wrapper {
+    width:1200px;
+    height:600px;
+    border-radius: 20px;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.top8_board_floor {
+    width:100%;
+    height:50%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.top8_board_floor .product_display_wrapper {
+    border: 1px solid black;
+    width:280px;
     height:100%;
-    margin-top: 0;
-    padding: 0;
-}
-
-#board_button_wrapper img {
-    height:80%;
-    width:60%;
-    border:1px solid pink;
-    position: relative;
-   
+    background-color: azure;
+    border-radius: 10px;
     
 }
 
-#right_button_wrapper {
+.top8_board_floor .product_display_wrapper > .img_wraper {
+    width:90%;
+    height:65%;
+    border:1px solid black;
+    margin-left: 12px;
     
+}
+.product_title {
+    border:1px solid red;
+    width:100%;
+    height:10%;
+
+}
+
+.ratring_counter {
+    border:1px solid red;
+    width:100%;
+    height:10%;
+    display: flex;
+    float: left;
     
+}
+.ratring_counter > p {
+    color:grey;
+    margin-right:10px;
 }
 
 
+/* <!-- =============================== 인기 게시글 섹션  ======================= --> */
 #footerbar 
 {
-            position: absolute;
-            top: 100%;
-            width: 100%;
-            height: 270px;
-            background-color: #00251a
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 270px;
+    margin-top: 50px;
+    background-color: #001811
 }
 
-        .footerbar_totalWrapper {
-            width: 1200px;
-            height: 100%;
-            border: 1px solid white;
-            margin: auto;
-        }
+.footerbar_totalWrapper {
+    width: 1200px;
+    border: 1px solid white;
+    margin: auto;
+}
 
-        .footer_upperWrapper {
-            width: 100%;
-            height: 52px;
-            border: 1px solid white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.footer_upperWrapper {
+    width: 100%;
+    height: 52px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .footer_upperWrapper>button {
-            margin-left: 40px;
-        }
+.footer_upperWrapper>button {
+    margin-left: 40px;
+}
 
-        .footer_belowWrapper {
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.footer_belowWrapper {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
