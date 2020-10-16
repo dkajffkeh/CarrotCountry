@@ -16,8 +16,6 @@ html {
     box-sizing: border-box;
 }
 
-
-
 body {
     min-height: 100%;
 }
@@ -88,8 +86,6 @@ body {
 }
 
 /*   <!-- ===============================최 상단 bar  ======================= -->       */
-
-
 
 /*   <!-- ============= 인기 게시물 썸내일 사진 display  ====================== --> */
 .banner_Wrapper {
@@ -174,11 +170,12 @@ body {
 
 #top8_board_wrapper {
     width:1200px;
-    height:600px;
+    height:750px;
     border-radius: 20px;
     margin:auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    
 
 }
 
@@ -192,10 +189,10 @@ body {
 }
 
 .top8_board_floor .product_display_wrapper {
-    border: 1px solid black;
+    
     width:280px;
     height:100%;
-    background-color: azure;
+    
     border-radius: 10px;
     
 }
@@ -203,28 +200,62 @@ body {
 .top8_board_floor .product_display_wrapper > .img_wraper {
     width:90%;
     height:65%;
-    border:1px solid black;
+    
     margin-left: 12px;
+    background-color: aliceblue;
+    border-radius: 3px;
     
 }
 .product_title {
-    border:1px solid red;
+    
     width:100%;
     height:10%;
+}
 
+.popular_board_title {
+   text-decoration: none;
+   color:black;
+   margin-left:10px;
+   margin-top:2px;
+   font-weight: bold;
+}
+
+.location_area {
+    height:7%;
+    width:96.5%;
+    
+    margin-left: 10px;
+    color:black;
+    
 }
 
 .ratring_counter {
-    border:1px solid red;
+    
     width:100%;
-    height:10%;
+    height:6%;
     display: flex;
     float: left;
-    
 }
+
 .ratring_counter > p {
+    font-size: 0.7rem;
+    display:inline-block;
+    height:100%;
+    
+    margin-left: 10px;
     color:grey;
-    margin-right:10px;
+}
+
+.price_display {
+    
+    height:18%;
+    text-align: right;
+    line-height: 250%;
+    margin-right: 10px;;
+    text-decoration: none;
+    
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 
