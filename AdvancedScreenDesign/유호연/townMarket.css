@@ -23,7 +23,6 @@ body {min-height: 100%;}
     align-items: center;
     border-bottom:1px solid green;
     font-size: 1.5rem;
-
 }
 .navbar_sizeWraper_1200px {
     display: flex;
@@ -60,18 +59,14 @@ body {min-height: 100%;}
 
 /* <!-- 검색 구간 --> */
 
-
 .section_contatiner{
     width: 1200px;
-    
     display: flex;
     justify-content: center;
-    margin:auto
+    margin:auto;
 }
 
-.form-control:hover {
-    border:1px solid black;
-}
+.form-control:hover {border:1px solid black;}
 
 .wrn-btn{
     width:100px;
@@ -79,6 +74,28 @@ body {min-height: 100%;}
     font-weight: 400;
     border-radius:0;
 }
-
-
 /* <!-- 검색 구간 --> */
+
+/* <!-- 정렬 구현 구간 --> */
+
+#sorter_wrapper {
+   
+    margin: auto;
+    width:1200px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sorter_row {
+    display: flex;
+    width:300px;
+    
+}
+
+.sorter_row > p {
+    color:darkgray;
+    padding-left: 5px;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
