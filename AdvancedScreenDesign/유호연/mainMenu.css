@@ -3,9 +3,7 @@ html {
     position: relative;
     min-height: 100%;
     margin: 0;
-
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +15,6 @@ html {
 }
 
 body {min-height: 100%;}
-
 
 /*   <!-- ===============================최 상단 bar  ======================= -->       */
 .navbar_Wrapper {
@@ -107,11 +104,12 @@ body {min-height: 100%;}
 
 .board_button_wrapper {
     display: flex;
-    width:850px;
+    width:700px;
     height:80px;
-    
+  
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
+   
 }
 
 .board_button_wrapper > button {

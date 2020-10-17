@@ -1,0 +1,84 @@
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body {min-height: 100%;}
+
+/*   <!-- ===============================최 상단 bar  ======================= -->       */
+.navbar_Wrapper {
+    background-color: orange;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid green;
+    font-size: 1.5rem;
+
+}
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+}
+.banner_cursor_wrapper div i {font-size: 30px;}
+
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+}
+.user_info_display_sectionWrapper {margin-left: 50px;}
+
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;
+}
+.MainLogo_Wrapper>div i {font-size: 2rem;}
+
+.menu_bar {margin-right: 50px;}
+
+.menu_bar>table tr td a {color: white}
+
+.user_inter_font {font-size: 0.7rem;}
+
+.menu_bar table tr td {padding-left: 10px; margin-left: 50px}
+
+/* <!-- 검색 구간 --> */
+
+
+.section_contatiner{
+    width: 1200px;
+    
+    display: flex;
+    justify-content: center;
+    margin:auto
+}
+
+.form-control:hover {
+    border:1px solid black;
+}
+
+.wrn-btn{
+    width:100px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius:0;
+}
+
+
+/* <!-- 검색 구간 --> */
