@@ -7,30 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="resources/css/headerNavBar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
     <style>
 
-        
 /* -----------------테스트부분입니다---------------- */
 
-  
+  /* 비밀번호 변경 css */
+  .outer{
+           margin-top:50px;
+           margin-left:50px;
+           width:1000px;
+           font-family: 'Nanum Gothic', sans-serif; 
+         }
+         #updatePwd{
+             border:2px solid lightgray;
+             height:400px;
+             width:800px;
+             margin:auto;
+         }
+         button{
+             float:right;
+         }
 /* -------------------------------------------------- */
 
 
 
-    .myPageWrapper{
-            border:1px solid black; /*뼈대 나중에 지움*/
+
+
+
+
+.myPageWrapper{
+            border:4px solid black; /*뼈대 나중에 지움*/
             width:1200px;
             margin:auto;
-            height:700px;
-            
+            height:1000px;
+           
         }
     .myPageWrapper>div{
         border:1px solid blue; /*뼈대 나중에 지움*/
         height:100%; float:left;
+        padding-bottom: 270px;
+        
+        
     }
     .myPageWrapper_content{width:85%;}
 
@@ -305,10 +328,28 @@ a {
 	<div class="myPageWrapper_content">
 <!--********************************CONTENT영역!!!!***********************************-->
 <!-- 화면의 파란부분 -->
-<br><br>
-	<p>글쓰기~~~~~~~~~~~~~~</p>
+<div class="outer">
     <br>
-    <p>안녕하세요</p>
+    <h2>비밀번호 변경</h2>
+    <hr color="gray">
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호를 변경해주세요
+    <br><br>
+    <div id="updatePwd">
+        <form action="" method="" id="myPageForm">
+
+
+
+
+        </form>
+    </div>
+    <button type="submit" class="btn btn-primary">변경하기</button>
+
+
+</div>
+
+
+
+
 <!--********************************CONTENT영역!!!!***********************************-->
 	</div>
 </div>

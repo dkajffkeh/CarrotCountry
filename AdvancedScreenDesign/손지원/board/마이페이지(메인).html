@@ -1,174 +1,607 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="resources/css/headerNavBar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- 폰트 링크 -->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
 
-  <style>
-    .outer{margin:auto;
+/* --------------------------content부분입니다------------------------- */
+/* content영역 전체 */
+    .outer{
+           margin-top:50px;
+           margin-left:50px;
            width:1000px;
+           font-family: 'Nanum Gothic', sans-serif; 
+
     }
-    .top{
-        border:1px solid green;
+/* content_bottom영역에 대한 전반적인 구조 */
+    #content_bottom>div{float:left;height:100%;}
+    #content_bottom1{
+        width:40%;
+        }
+    #content_bottom2{
+        width:50%;
+    }
+    #content_bottom2_1{
+        float:right;
+        line-height:10px;
+    }
+    
+        
+/* content_top 영역에 대한 세부 스타일 */
+    #content_top{
+        border:3px solid gray;
         padding:10px;
-        width: 1000px;
+        width: 800px;
         height:200px;
-        margin-left:100px;
+        margin-left:50px;
     }
-    .top_1{
-        width:30%;
+    #content_top1{
+        width:20%;
         height:100%;
         float:left;
     }
-    .top_2{
-        width:60%;
+    #content_top2{
+        width:50%;
         height:100%;
         float:left;
-        
+        margin-left:40px;   
     }
-    .top_3{
-        width:10%;
+    #content_top3{
         height:100%;
         float:left;
-        line-height:30px;
-        
+        line-height:20px;
+        margin-left:50px;
+        margin-top:50px;
     }
-    .top_2>span{
+    #content_top2>span{
         float:left; 
         padding:10px;
-        margin:30px;
-        font-size:20px;
+        font-size:30px;
+        margin-top:40px;
     }
-    .left{
-        margin-left:50px;
-        border: 2px solid green;
-        width:40%;
-        height:400px;
-        padding:20px;
-        margin-left:100px;
-        
+
+    /* content_bottom영역에 대한 세부스타일 */
+    #content_bottom1{
+    margin-left:50px;
+    border: 3px solid gray;
     }
-    .left>table{
-        font-size:15px;
-        margin:auto;
+    #content_bottom1>table{
+    font-size:20px;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:100px;
     }
     td{
-        width:80px;
-        height:40px;
+    width:90px;
+    height:45px;
     }
-    .right{
-        width:40%;
-        float:right;
-        padding:30px;
-        margin:10px;
-        font-size:20px;
-       
+    #content_bottom2{
+    padding:30px;
+    font-size:20px;
     }
-    .right_1{
-        margin:10px;
-        padding:50px;
+    #content_bottom2{
+    margin:auto;
+    padding:50px;
     }
-    .right>button{
-        margin:10px;
-        float:right
+    #content_bottom2_2{
+    margin:20px;
     }
-    
-    
     
 
-  </style>
- 
 
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+.myPageWrapper{
+            border:1px solid black; /*뼈대 나중에 지움*/
+            width:1200px;
+            margin:auto;
+            height:1000px;
+           
+        }
+    .myPageWrapper>div{
+        border:1px solid blue; /*뼈대 나중에 지움*/
+        height:100%; float:left;
+        padding-bottom: 270px;
+        
+        
+    }
+    .myPageWrapper_content{width:85%;}
+
+/*----------headerNavbar include 영역 시작----------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar_Wrapper {
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+
+}
+
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user_info_display_sectionWrapper {
+    margin-left: 50px;
+}
+
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper>div i {
+    font-size: 2rem;
+}
+
+.menu_bar {
+    margin-right: 50px;
+}
+
+.menu_bar>table tr td a {
+    color: white
+}
+
+.user_inter_font {
+    font-size: 0.7rem;
+}
+
+.menu_bar table tr td {
+    padding-left: 10px;
+
+
+}
+/*----------headerNavbar include 영역 끝----------*/
+
+/*----------myPageNavbar include 영역 시작----------*/
+.myPageWrapper_nav{
+            /* margin-left:100px; */
+            width:15%;
+            /* 폰트 */
+            font-family: 'Do Hyeon', sans-serif;
+        
+        }
+        #myPageWrapper_nav_title{
+         background:orange;
+         width:100%;
+         height:10%; 
+         color:white;
+         /* margin-top:200px; */
+         font-size:30px;
+         font-weight:900;
+        }
+        .myPageWrapper_nav th{
+            background:lightgray;
+            padding:5px;
+            text-align:center;
+            font-size:20px;
+        }
+        .myPageWrapper_nav td{
+            text-align:center;
+            padding:5px;
+            border:1px solid lightgray;
+            
+        }
+        #myPageWrapper_nav_table{
+            width:100%;
+            height:90%;
+            border:1px solid lightgray;
+        }
+        .myPageWrapper_nav a{
+            text-decoration:none;
+            color:black;
+            font-size:20px;
+            display:block;
+            width:100%;
+            height:100%;
+        }
+        .myPageWrapper_nav a:hover{
+            background:cornsilk;
+        }
+/*----------myPageNavbar include 영역 끝----------*/
+
+/*----------footerbar include 영역 시작----------*/
+#footerbar {
+            position: absolute;
+            width: 100%;
+            height: 270px;
+            background-color: #00251a
+        }
+
+        .footerbar_totalWrapper {
+            width: 1200px;
+            height: 100%;
+            border: 1px solid white;
+            margin: auto;
+        }
+
+        .footer_upperWrapper {
+            width: 100%;
+            height: 52px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_upperWrapper>button {
+            margin-left: 40px;
+        }
+
+        .footer_belowWrapper {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/*----------footerbar include 영역 끝----------*/
+    </style>
+    
 </head>
+
 <body>
-    <div class="outer">
-        <br>
-        <h2>회원정보</h2>
-         <hr color="gray">
-         <br><br><br><br>
-         <div class="top">
-             <!-- 프로필 사진 -->
-            <div class="top_1">
-                <img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
-                <input type="file" name="profile" id="profile">
-            </div>
-            <!-- 3가지 건수 노출부분 -->
-            <div class="top_2">
-                <span><h3>구매/판매</h3>xx 건</span>
-                <span><h3>공동구매</h3>xx 건</span>
-                <span><h3>문의</h3>xx 건</span>    
-            </div>
-            <!-- 버튼 2개 부분 -->
-           <div class="top_3">
-            <button type="button"class="btn btn-secondary ">회원 정보 수정</button><br><br>
-            <button type="button" class="btn btn-secondary ">비밀번호 변경</button>
-           </div>
+
+
+
+
+
+
+
+
+<!----------headerNavbar 영역 시작---------->
+<!-- <%@ include file="../common/headerNavbar.jsp" %> -->
+<nav class="navbar_Wrapper">
+    <div class="navbar_sizeWraper_1200px">
+        <div class="user_info_display_sectionWrapper">
+            <div><a href=""><i class="fas fa-user"></i></a></div>
+            <div><a href="">OOO님</a></div>
         </div>
-        <br><br><br><br>
-            <!--회원정보 상자  -->
-         <div class="left">
-                <table>
-                    <tr>
-                        <td>아이디</td>
-                        <td>xxxx</td>
-                    </tr>
-                    <tr>
-                        <td>성함</td>
-                        <td>xxx</td>
-                    </tr>
-                    <tr>
-                        <td>성별</td>
-                        <td>xx</td>
-                    </tr>
-                    <tr>
-                        <td>생년월일</td>
-                        <td>xxxx-xx-xx</td>
-                    </tr>
-                    <tr>
-                        <td>닉네임</td>
-                        <td>xx</td>
-                    </tr>
-                    <tr>
-                        <td>연락처</td>
-                        <td>xxxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>주소</td>
-                        <td>xxxxxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>E-Mail</td>
-                        <td>xxxxxx</td>
-                    </tr>
-                </table>
-         </div>
-         <!-- 배송지 정보  -->
-         <div class="right">
-            <h3>배송지 등록 정보</h3> 
+        <div class=MainLogo_Wrapper>
+            <div><a href=""><i class="fas fa-carrot"></i></a></div>
+            <div><a href="">당근나라</a></div>
+        </div>
+        <div class="menu_bar">
+            <table>
+                <tr align="center" class="user_inter_icon">
+                    <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                    <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                    <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                </tr>
+                <tr class="user_inter_font">
+                    <td><a href="">로그인</a></td>
+                    <td><a href="">회원가입</a></td>
+                    <td><a href="">마이페이지</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</nav>
+<script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+<!----------headerNavbar 영역 끝---------->
 
-            <button type="button" class="btn btn-secondary btn-sm">삭제</button>
-            <button type="button" class="btn btn-secondary btn-sm">등록</button>
 
-            <div class="right_1">
-            <input type="checkbox" name="delivery" id="address1" value="address1">
-            배송지1 ) xxxxxxxxxxxxxxxxxxxxxx
-            <br><br><input type="checkbox" name="delivery" id="address2" value="address2">
-            배송지2 ) xxxxxxxxxxxxxxxxxxxxxxxxxxx
-            <br><br><input type="checkbox" name="delivery" id="address3" value="address3">
-            배송지3 ) xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+
+
+    <div class="myPageWrapper">
+
+<!----------myPageNavbar include 영역 시작---------->
+ <!-- <%@ include file="../common/myPageNavbar.jsp" %> -->
+ <div class="myPageWrapper_nav">
+    <div id="myPageWrapper_nav_title" align="center">
+        마이페이지
+    </div>
+    
+    <table id="myPageWrapper_nav_table">
+    <tr>
+        <th>회원 정보</th>
+    </tr>
+    <tr>
+            <td><a href="">회원 정보 설정</a></td>
+    </tr>
+            <td><a href="">회원 탈퇴</a></td>
+    <tr>
+        <th>관심 상품</th>
+    </tr>
+    <tr>
+        <td><a href="">찜</a></td>
+    </tr>
+    <tr>
+        <td><a href="">최근 본 상품</a></td>
+    </tr>
+    <tr>
+        <th>판매 이력 조회</th>
+    </tr>
+    <tr>
+        <td><a href="">판매 현황</a></td>
+    </tr>
+    <tr>
+        <th>공동구매</th>
+    </tr>
+    <tr>
+        <td><a href="">내 게시글</a></td>
+    </tr>
+    <tr>
+        <td><a href="">진행 현황</a></td>
+    </tr>
+    <tr>
+        <th><a href="">신고내역</a></th>
+    </tr>
+    <tr>
+        <th id="admin"><a href="" >관리자 페이지</a></th>
+    </tr>
+    </table>
+</div>
+<!----------myPageNavbar include 영역 끝---------->
+        
+
+
+
+
+
+
+
+
+
+
+
+	<div class="myPageWrapper_content">
+<!--********************************CONTENT영역!!!!***********************************-->
+<!-- 화면의 파란부분 -->
+<div class="outer">
+    <br>
+    <h2>회원 정보</h2>
+     <hr color="gray">
+     <br><br>
+     <!-- content영역의 윗부분 -->
+     <div id="content_top">
+         <!-- 프로필 사진 -->
+        <div id="content_top1">           
+                <div class="media border p-3">
+                  <img src="img_avatar3.png"  class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                </div>
+           <br>
+           
+           
+            <input type="file" name="profile" id="profile">
+        </div>
+        <!-- 3가지 건수 노출부분 -->
+        <div id="content_top2">
+            <span align="center"><h4><b>구매/판매</b></h4>xx 건</span>
+            <span align="center"><h4><b>공동구매</b></h4>xx 건</span>
+            <span align="center"><h4><b>문의</b></h4>xx 건</span>    
+        </div>
+        <!-- 버튼 2개 부분 -->
+       <div id="content_top3">
+        <button type="button"class="btn btn-secondary btn-sm">회원 정보 수정</button><br><br>
+        <button type="button" class="btn btn-secondary btn-sm">비밀번호 변경</button>
+       </div>
+    </div>
+    <br><br><br><br>
+    <!-- content영역의 아랫부분 (회원정보, 배송지정보) -->
+    <div id="content_bottom">
+            <!--회원정보 -->
+     <div id="content_bottom1">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>xxxx</td>
+            </tr>
+            <tr>
+                <td>성함</td>
+                <td>xxx</td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>xx</td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>xxxx-xx-xx</td>
+            </tr>
+            <tr>
+                <td>닉네임</td>
+                <td>xx</td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td>xxxxxx</td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td>xxxxxxxx</td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td>xxxxxx</td>
+            </tr>
+        </table>
+        </div>
+        <!-- 배송지 정보  -->
+        <div id="content_bottom2">
+            <h3><b>배송지 등록 정보</b></h3> 
+            <br>
+            <div id = "content_bottom2_1">
+                <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#addAdressForm">등록</button>
+                <button type="button" class="btn btn-secondary btn-sm">삭제</button>    
             </div>
-
-         </div>
+         <br><br>
+            <div id="content_bottom2_2">
+            <input type="checkbox" name="delivery" id="address1" value="address1">
+            배송지1 )<br>
+            xxxxxxxxxxxxxxxxxxxxxx
+            <br><br><input type="checkbox" name="delivery" id="address2" value="address2">
+            배송지2 )<br>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <br><br><input type="checkbox" name="delivery" id="address3" value="address3">
+            배송지3 )<br>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </div>
+        </div>
 
 
     </div>
     
+</div>
 
 
+
+<!-------------------------------- 배송지 등록 버튼 클릭시 보여질 modal------------------>
+    <div class="modal fade" id="addAdressForm">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">배송지 추가</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body" align="center">
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <th>수령인&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        <td><input type="text" name="userName" required></td>
+                    </tr>
+                    <tr>
+                        <th>배송지&nbsp;&nbsp;&nbsp;&nbsp;</th><br>
+                        <td>
+                            <select id="Address_D" required>
+                                <option value=''>선택하세요</option>
+                                <option value='서울특별시'>서울특별시</option>
+                                <option value='광주광역시'>광주광역시</option>
+                                <option value='대구광역시'>대구광역시</option>
+                                <option value='대전광역시'>대전광역시</option>
+                                <option value='부산광역시'>부산광역시</option>
+                                <option value='울산광역시'>울산광역시</option>
+                                <option value='인천광역시'>인천광역시</option>
+                                <option value='세종특별자치시'>세종특별자치시</option>
+                                <option value='강원도'>강원도</option>
+                                <option value='경기도'>경기도</option>
+                                <option value='경상남도'>경상남도</option>
+                                <option value='경상북도'>경상북도</option>
+                                <option value='전라남도'>전라남도</option>
+                                <option value='전라북도'>전라북도</option>
+                                <option value='제주특별자치도'>제주특별자치도</option>
+                                <option value='충청남도'>충청남도</option>
+                                <option value='충청북도'>충청북도</option>
+                                </select>
+                            </td>
+
+                        </td>
+                        <td><input type="text" name="address" required></td>
+                    </tr>
+                    <tr>
+                        <th>연락처&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        <td><input type="text" name= "phone" required></td>
+                    </tr>
+                </table>
+                <br>
+                
+                <br>
+                <button type="submit" class="btn btn-primary">등록</button>
+
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+<!------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+<!--********************************CONTENT영역!!!!***********************************-->
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!----------footerbar include 영역 시작---------->
+<!-- <%@ include file="../common/footerbar.jsp" %> -->
+<footer id="footerbar">
+    <div class=footerbar_totalWrapper>
+        <div class="footer_upperWrapper">
+            <button>공지사항</button>
+            <button>고객센터</button>
+            <button>개인정보 취급방침</button>
+            <button>회사소개</button>
+        </div>
+        <div class="footer_belowWrapper">
+            <p style="color:white">잡소리</p>
+        </div>
+    </div>
+
+</footer>
+<!----------footerbar include 영역 끝---------->
 </body>
+
 </html>
