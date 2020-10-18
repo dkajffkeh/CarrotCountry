@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="Common.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <style>
+        div, form, input{
+           border:1px solid red; 
+           box-sizing:border-box;
+       }
+       .wrap{width:1200px;height:800px;margin:auto;}
+       #content{height: 80%;}
+       #footer{height:20%; margin:10px 0px;}
+
+       /* 콘텐트바의 전반적인 틀 */
+       #content>div{width: 100%;}
+       #content1{height: 10%;}
+       #content2{height: 30%;}
+       #content3{height: 60%;}
+
+       #content2>*{height: 100%; float: left;}
+       #content2_1{width: 30%;}
+       #content2_2{width: 70%;}
+       #content2_2>*{width: 100%; float: left;}
+       #content2_2_1{height: 80%;}
+       #content2_2_2{height: 20%;}
+       #content2_2_2>div{
+           height: 100%;
+           width: 33.3%;
+           float: left;
+       }
+       #content2_2_2>div>button{
+           width: 100px;
+           display: block;
+           margin: auto;
+       }
+       #content2_2_2>div>button:hover{
+            background: rgb(139, 139, 139);
+        }
+
+       #content3>div{width: 100%; float: left;}
+       #content3_1{height: 10%;}
+       #content3_2{height: 90%;}
+       #content3_1>div{
+            height: 100%; 
+            width: 25%; 
+            float: left;
+            display:block
+        }
+        #content3_1>div>button{
+            width: 90%;
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        #content3_1>div>button:hover{
+            background: rgb(139, 139, 139);
+        }
+        
+      
+
+
+
+
+       /* 푸터바의 전반적인 틀 */
+       #footer{background-color: #00251a}
+
+   </style>
+</head>
+<body>
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+                    <tr class="user_inter_font">
+                        <td><a href="">로그인</a></td>
+                        <td><a href="">회원가입</a></td>
+                        <td><a href="">마이페이지</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+    
+    <div class="wrap">
+        <div id="content">
+            <div id="content1">
+                <h3><b>[물품게시글 제목]</b></h3>
+            </div>
+            <div id="content2">
+                <div id="content2_1">
+                    <b>물품사진</b
+                ></div>
+                <div id="content2_2">
+               
+                        <div id="content2_2_1">
+                            <b>물품정보</b>
+                        </div>
+                       
+                        <br><br>
+
+                        <div id="content2_2_2">
+                            <div id="interst">
+                                <button class="btn btn-secondary btn-sm">찜하기</button>
+                            </div>
+                            <div id="buy">
+                                <button class="btn btn-secondary btn-sm">구매하기</button>
+                            </div>
+                            <div id="report">
+                                <button class="btn btn-secondary btn-sm">신고하기</button>
+                            </div>
+                            
+                        </div>
+                       
+                   
+                   
+                </div>
+            </div>
+            <div id="content3">
+              
+                    <div id="content3_1">
+                        <div id="content3_1_1">
+                            <button type="button" onclick="showExplan()" class="btn btn-dark">상세설명</button>
+                        </div>
+                        <div id="content3_1_2">
+                            <button type="button" onclick="showMoney()" class="btn btn-dark">입금방법</button>
+                        </div>
+                        <div id="content3_1_3">
+                            <button type="button" class="btn btn-dark">Q&A</button>
+                        </div>
+                        <div id="content3_1_4">
+                            <button type="button" onclick="showRefund()" class="btn btn-dark">교환 및 환불</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div id="content3_2">
+                        <div id="showExplan"><b>상세설명 버튼클릭시 보여질 내용(에디터로 서술한 것), 아무버튼누르지 않았을땐 이 창이 default</b></div>
+                        <div id="showMoney" style="display: none;"><b>입금방법 버튼클릭시 보여질 내용(에디터로 서술한 것)</b></div>
+                        <div id="showRefund" style="display: none;"><b>교환 및 환불 버튼클릭시 보여질 내용(에디터로 서술한 것)</b></div>
+                    </div>
+
+                    
+
+
+                    
+            </div>
+        </div>
+
+
+        <div id="footer" align="center">
+            <div id="footer1">
+                <button class="btn btn-secondary">공지사항</button>
+                <button class="btn btn-secondary"> 고객센터</button>
+                <button class="btn btn-secondary">개인정보 취급방침</button>
+                <button class="btn btn-secondary">회사소개</button>
+            </div>
+    
+            <div id="footer2">
+               <p style="color: white;">footer</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
