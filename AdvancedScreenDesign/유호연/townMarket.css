@@ -216,12 +216,12 @@ img {height:100%; width:100%; border-radius: 5px;}
 }
 
 .page_display {
-    width:1000px;
+    width:1200px;
     height:40px;
     
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -230,3 +230,38 @@ img {height:100%; width:100%; border-radius: 5px;}
 /*오른쪽 아티클 구간*/
 
 /* 메인 아티클 CSS */
+
+#footerbar {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 270px;
+    background-color: #00251a
+}
+
+.footerbar_totalWrapper {
+    width: 1200px;
+    height: 100%;
+    border: 1px solid white;
+    margin: auto;
+}
+
+.footer_upperWrapper {
+    width: 100%;
+    height: 52px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_upperWrapper>button {
+    margin-left: 40px;
+}
+
+.footer_belowWrapper {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
