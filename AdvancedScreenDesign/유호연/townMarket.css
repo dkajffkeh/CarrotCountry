@@ -100,6 +100,7 @@ img {height:100%; width:100%;}
 
 /* 메인 아티클 CSS */
 
+/*사이트바*/
  #mainArticle_wrapper {
      width:1200px;
      height:1350px;
@@ -119,6 +120,18 @@ img {height:100%; width:100%;}
 
  }
 
+ .side_bar.font {
+     width:100%;
+     height:5%;
+     font-size: 2.5rem;
+     text-align: center;
+     border-bottom:2px solid rgb(226, 226, 226) ;
+
+ }
+
+ /*사이트바*/
+
+ /*오른쪽 아티클 구간*/
  .mainArticle_article {
      height:100%;
      width:1000px;
@@ -130,7 +143,6 @@ img {height:100%; width:100%;}
      display: inline-block;
      height:300px;
      width:23%;
-     border:1px solid red;
      margin:18px 6px 6px 6px;
  }
 
@@ -140,15 +152,14 @@ img {height:100%; width:100%;}
  }
 
  .product_title {
+     margin-top: 5px;
     width:100%;
     height:10%;
 }
 
 .popular_board_title {
    text-decoration: none;
-   color:black;
    margin-left:10px;
-   margin-top:2px;
    font-weight: bold;
 }
 
@@ -156,7 +167,6 @@ img {height:100%; width:100%;}
     height:7%;
     width:96.5%;
     margin-left: 10px;
-    color:black;
     
 }
 
@@ -169,9 +179,9 @@ img {height:100%; width:100%;}
 
 .ratring_counter > p {
     font-size: 0.7rem;
-    display:inline-block;
     height:100%;
     margin-left: 10px;
+    margin-top:10px;
     color:grey;
 }
 
@@ -193,13 +203,6 @@ img {height:100%; width:100%;}
     font-size: 1rem;
     font-weight: bold;
 }
-
-
- 
- 
- 
-
-
-
+/*오른쪽 아티클 구간*/
 
 /* 메인 아티클 CSS */
