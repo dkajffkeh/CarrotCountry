@@ -35,13 +35,14 @@
            margin-top:50px;
            margin-left:50px;
            width:1000px;
-           font-family: 'Nanum Gothic', sans-serif; 
+           font-family: 'Do Hyeon', sans-serif;
          }
          #updatePwd{
              border:2px solid lightgray;
-             height:400px;
+             height:450px;
              width:800px;
              margin:auto;
+             font-size:25px;
          }
          button{
              float:right;
@@ -50,8 +51,8 @@
              margin-left:80px;
              margin-top:40px;
          }
-         #notice1{color:#fa8500;}
-         .notice2{color:red;}
+         #notice1{color:#fa8500; font-size:23px;}
+         .notice2{color:red; font-size:21px;}
     
   
     </style>
@@ -106,42 +107,45 @@
 
 
     <div class="outer">
-        <br>
-        <h2>비밀번호 변경</h2>
-        <hr color="gray">
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호를 변경해주세요
-        <br><br>
-        <div id="updatePwd">
-            <form action="" method="" id="myPageForm">
-                <p id="notice1">* 비밀번호는 영문, 숫자, 특수문자 포함 6~16자</p><br>
-                현재 비밀번호 : &nbsp;&nbsp;
-                <input type="password" name="userPwd" required>
-                
-                <!-- 잘못입력 시 나타나는 부분 -->
-                <p class="notice2">&nbsp;&nbsp;* 정확히 입력해주세요.</p>
-                
-                <br>
-                새 비밀번호 : &nbsp;&nbsp;
-                <input type="password" name="updatePwd" required>
+        <form action="" method="post" id="enrollForm">
+            <br>
+            <h1>비밀번호 변경</h1>
+            <hr color="gray">
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호를 변경해주세요
+            <br><br>
+            <div id="updatePwd">
+                <form action="" method="" id="myPageForm">
+                    <p id="notice1">* 비밀번호는 영문, 숫자, 특수문자 포함 6~16자</p><br>
+                    현재 비밀번호 : &nbsp;&nbsp;
+                    <input type="password" name="userPwd" required>
+                    
+                    <!-- 잘못입력 시 나타나는 부분 -->
+                    <p class="notice2">&nbsp;&nbsp;* 정확히 입력해주세요.</p>
+                    
+                    <br>
+                    새 비밀번호 : &nbsp;&nbsp;
+                    <input type="password" name="updatePwd" required>
+    
+                    <!-- 잘못입력 시 나타나는 부분 -->
+                    <p class="notice2">&nbsp;&nbsp;* 정확히 입력해주세요.</p>
+                    
+                    <br>
+                    새 비밀번호 확인 : &nbsp;&nbsp;
+                    <input type="password" name="checkPwd" required>
+    
+                    <!-- 잘못입력 시 나타나는 부분 -->
+                    <p class="notice2">&nbsp;&nbsp;* 비밀번호가 다릅니다. 다시 입력하세요.</p>
+                    
+                    <br>
+    
+    
+                </form>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" >변경하기</button>
+    
 
-                <!-- 잘못입력 시 나타나는 부분 -->
-                <p class="notice2">&nbsp;&nbsp;* 정확히 입력해주세요.</p>
-                
-                <br>
-                새 비밀번호 확인 : &nbsp;&nbsp;
-                <input type="password" name="checkPwd" required>
 
-                <!-- 잘못입력 시 나타나는 부분 -->
-                <p class="notice2">&nbsp;&nbsp;* 비밀번호가 다릅니다. 다시 입력하세요.</p>
-                
-                <br>
-
-
-            </form>
-        </div>
-        <button type="submit" class="btn btn-primary">변경하기</button>
-
-
+        </form>
     </div>
 
 

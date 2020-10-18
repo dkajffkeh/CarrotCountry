@@ -7,107 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="resources/css/headerNavBar.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- 메뉴 링크 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- 폰트 링크 -->
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
-    
     <style>
 
-/* --------------------------content부분입니다------------------------- */
-/* content영역 전체 */
+        
+/* -----------------테스트부분입니다---------------- */
     .outer{
            margin-top:50px;
            margin-left:50px;
            width:1000px;
            font-family: 'Nanum Gothic', sans-serif; 
-
-    }
-/* content_bottom영역에 대한 전반적인 구조 */
-    #content_bottom>div{float:left;height:100%;}
-    #content_bottom1{
-        width:40%;
+           }
+     /* 메뉴선택 세부영역 */
+     
+     .menu{
+            display:table-cell;
+            height:50px;
+            width:140px;
         }
-    #content_bottom2{
-        width:50%;
-    }
-    #content_bottom2_1{
-        float:right;
-        line-height:10px;
-    }
-    
-        
-/* content_top 영역에 대한 세부 스타일 */
-    #content_top{
-        border:3px solid gray;
-        padding:10px;
-        width: 800px;
-        height:200px;
-        margin-left:50px;
-    }
-    #content_top1{
-        width:20%;
-        height:100%;
-        float:left;
-    }
-    #content_top2{
-        width:50%;
-        height:100%;
-        float:left;
-        margin-left:90px;   
-        padding:10px;
-    }
-    #content_top3{
-        height:100%;
-        float:left;
-        line-height:20px;
-        margin-left:25px;
-        margin-top:50px;
-    }
-    #content_top2>span{
-        float:left; 
-        padding:10px;
+    .menu a{
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+            display:block;
+            width:100%;
+            height:100%;
+            font-size:20px;
+            line-height:50px;
+            background-color:rgb(250, 240, 220);
+            border-radius:80px;
+     }
+     .menu a:hover{
+        background:rgb(248, 141, 2);
         font-size:30px;
-        margin-top:40px;
-       
-    }
-    #content_top2 a{color:orange;}
-
-    /* content_bottom영역에 대한 세부스타일 */
-    #content_bottom1{
-    margin-left:50px;
-    border: 3px solid gray;
-    }
-    #content_bottom1>table{
-    font-size:20px;
-    margin-top:50px;
-    margin-bottom:50px;
-    margin-left:100px;
-    }
-    td{
-    width:90px;
-    height:45px;
-    }
-    #content_bottom2{
-    padding:30px;
-    font-size:20px;
-    }
-    #content_bottom2{
-    margin:auto;
-    padding:50px;
-    }
-    #content_bottom2_2{
-    margin:20px;
-    }
-    
+        color:white;
+        border-radius:80px;
+        }
+     
+     /* 내용 세부영역 */
+     /* #content{margin:auto;} */
+     th{ font-size:25px;}
+     #saleStatusTable{
+         margin:auto;
+         font-size:20px;
+     }
+     #saleStatusTable td{
+         width:230px;
+         height:90px;
+     }
+     
+     
     
 
 
-
-
-/* -------------------------------------------------------------------- */
+  
+/* -------------------------------------------------- */
 
 
 
@@ -117,14 +77,13 @@
             border:1px solid black; /*뼈대 나중에 지움*/
             width:1200px;
             margin:auto;
-            height:1000px;
+            height:1500px;
            
         }
     .myPageWrapper>div{
         border:1px solid blue; /*뼈대 나중에 지움*/
         height:100%; float:left;
-        padding-bottom: 270px;
-        
+        padding-bottom: 800px;
         
     }
     .myPageWrapper_content{width:85%;}
@@ -288,7 +247,6 @@ a {
         }
 /*----------footerbar include 영역 끝----------*/
     </style>
-    
 </head>
 
 <body>
@@ -403,182 +361,148 @@ a {
 	<div class="myPageWrapper_content">
 <!--********************************CONTENT영역!!!!***********************************-->
 <!-- 화면의 파란부분 -->
-<div class="outer">
-    <br>
-    <h2>회원 정보</h2>
-     <hr color="gray">
-     <br><br>
-     <!-- content영역의 윗부분 -->
-     <div id="content_top">
-         <!-- 프로필 사진 -->
-        <div id="content_top1">           
-                <div class="media border p-3">
-                  <img src="img_avatar3.png"  class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="outer">
+        <br>
+        <h2>판매중</h2>
+        <hr style="border:1px solid gray;"/>
+        <br>
+        <!-- 메뉴선택 버튼 -->
+        <div class="navWrap">
+            <div class="menu" align ="center"><a href="">판매중</a></div>
+            <div class="menu" align ="center"><a href="">판매완료</a></div>
+        </div>
+        <br>
+        <!-- 검색필터 드롭다운 -->
+        <div class="container">
+            <div class="dropdown">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                등록일순
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">등록일순</a>
+                    <a class="dropdown-item" href="">진행상태순</a>
+                    <a class="dropdown-item" href="">상품명순</a>
                 </div>
-           <br>
-           
-           
-            <input type="file" name="profile" id="profile">
-        </div>
-        <!-- 3가지 건수 노출부분 -->
-        <div id="content_top2">
-            <span align="center"><h4><b>구매/판매</b></h4><a href="">2</a> 건</span>
-            <span align="center"><h4><b>공동구매</b></h4><a href="">3</a> 건</span>
-            <span align="center"><h4><b>문의</b></h4><a href="">1</a>건</span>    
-        </div>
-        <!-- 버튼 2개 부분 -->
-       <div id="content_top3">
-        <button type="button"class="btn btn-secondary btn-sm">회원 정보 수정</button><br><br>
-        <button type="button" class="btn btn-secondary btn-sm">비밀번호 변경</button>
-       </div>
-    </div>
-    <br><br><br><br>
-    <!-- content영역의 아랫부분 (회원정보, 배송지정보) -->
-    <div id="content_bottom">
-            <!--회원정보 -->
-     <div id="content_bottom1">
-        <table>
-            <tr>
-                <td>아이디</td>
-                <td>xxxx</td>
-            </tr>
-            <tr>
-                <td>성함</td>
-                <td>xxx</td>
-            </tr>
-            <tr>
-                <td>성별</td>
-                <td>xx</td>
-            </tr>
-            <tr>
-                <td>생년월일</td>
-                <td>xxxx-xx-xx</td>
-            </tr>
-            <tr>
-                <td>닉네임</td>
-                <td>xx</td>
-            </tr>
-            <tr>
-                <td>연락처</td>
-                <td>xxxxxx</td>
-            </tr>
-            <tr>
-                <td>주소</td>
-                <td>xxxxxxxx</td>
-            </tr>
-            <tr>
-                <td>E-Mail</td>
-                <td>xxxxxx</td>
-            </tr>
-        </table>
-        </div>
-        <!-- 배송지 정보  -->
-        <div id="content_bottom2">
-            <h3><b>배송지 등록 정보</b></h3> 
-            <br>
-            <div id = "content_bottom2_1">
-                <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#addAdressForm">등록</button>
-                <button type="button" class="btn btn-secondary btn-sm"  data-toggle="modal" data-target="#deleteAddress">삭제</button>    
             </div>
-         <br><br>
-            <div id="content_bottom2_2">
-            <input type="checkbox" name="delivery" id="address1" value="address1">
-            배송지1 )<br>
-            xxxxxxxxxxxxxxxxxxxxxx
-            <br><br><input type="checkbox" name="delivery" id="address2" value="address2">
-            배송지2 )<br>
-            xxxxxxxxxxxxxxxxxxxxxxxxxxx
-            <br><br><input type="checkbox" name="delivery" id="address3" value="address3">
-            배송지3 )<br>
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
         </div>
-        </div>
-
-
-    </div>
-    
-</div>
-
-
-
-<!-------------------------------- 배송지 등록 버튼 클릭시 보여질 modal------------------>
-    <div class="modal fade" id="addAdressForm">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">배송지 추가</h4>
-            <button type="button" class="close" data-dismiss="modal">×</button>
-          </div>
-          
-          <!-- Modal body -->
-          <div class="modal-body" align="center">
-            <form action="" method="post">
-                <table>
-                    <tr>
-                        <th>수령인&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                        <td><input type="text" name="userName" required></td>
+        <br><br><br>
+        <!-- 내용 -->
+        <div id="content">
+            <!-- form태그 진행상태값 받아와야해서 넣음 -->
+            <form action="" method="post" id="saleStatus">
+                <table border="1" id="saleStatusTable">
+                    <tr align="center">
+                        <th></th>
+                        <th><b>상품정보</b></th>
+                        <th></th>
+                        <th><b>진행상태</b></th>
+                        <th></th>
+                        <th><b>등록일</b></th>
                     </tr>
-                    <tr>
-                        <th>배송지&nbsp;&nbsp;&nbsp;&nbsp;</th><br>
-                        <td>
-                            <select id="Address_D" required>
-                                <option value=''>선택하세요</option>
-                                <option value='서울특별시'>서울특별시</option>
-                                <option value='광주광역시'>광주광역시</option>
-                                <option value='대구광역시'>대구광역시</option>
-                                <option value='대전광역시'>대전광역시</option>
-                                <option value='부산광역시'>부산광역시</option>
-                                <option value='울산광역시'>울산광역시</option>
-                                <option value='인천광역시'>인천광역시</option>
-                                <option value='세종특별자치시'>세종특별자치시</option>
-                                <option value='강원도'>강원도</option>
-                                <option value='경기도'>경기도</option>
-                                <option value='경상남도'>경상남도</option>
-                                <option value='경상북도'>경상북도</option>
-                                <option value='전라남도'>전라남도</option>
-                                <option value='전라북도'>전라북도</option>
-                                <option value='제주특별자치도'>제주특별자치도</option>
-                                <option value='충청남도'>충청남도</option>
-                                <option value='충청북도'>충청북도</option>
-                                </select>
-                            </td>
-
+                    <tr align="center">
+                        <th rowspan="2">1</th>
+                        <td rowspan="2"><div class="img_wraper"><img src="../../Common/images/3.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;" ></div></td>
+                        <td>상품명</td>
+                        <td>예약중</td>
+                        <td><button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#updateState">수정</button></td>
+                        <td>xxxx-xx-xx</td>
+                        <td id="button1">
+                            <button type="button" class="btn btn-secondary btn-sm">끌어올리기</button>
+                            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#deletePost">삭제</button>
                         </td>
-                        <td><input type="text" name="address" required></td>
                     </tr>
                     <tr>
-                        <th>연락처&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                        <td><input type="text" name= "phone" required></td>
+                        <td align="center">xxxx원</td>
                     </tr>
-                         
+                    <tr align="center">
+                        <th rowspan="2">2</th>
+                        <td rowspan="2"><div class="img_wraper"><img src="../../Common/images/맥북.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;"></div></td>
+                        <td>상품명</td>
+                        <td>판매중</td>
+                        <td><button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#updateState">수정</button></td>
+                        <td>xxxx-xx-xx</td>
+                        <td id="button1">
+                            <button type="button" class="btn btn-secondary btn-sm">끌어올리기</button>
+                            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#deletePost">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+               
+                        <td align="center">xxxx원</td>
+                    </tr>
+                    <tr align="center">
+                        <th rowspan="2">3</th>
+                        <td rowspan="2"><div class="img_wraper"><img src="../../Common/images/1.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;" ></td>
+                        <td>상품명</td>
+                        <td>거래완료</td>
+                        <td><button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#updateState">수정</button></td>
+                        <td>xxxx-xx-xx</td>
+                        <td id="button1">
+                            <button type="button" class="btn btn-secondary btn-sm" >끌어올리기</button>
+                            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#deletePost">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                    
+                        <td align="center">xxxx원</td>
+                    </tr>
                 </table>
-                <br>
-                <!-- Modal footer -->
-            <div class="modal-footer">
-                <input id="default" type="checkbox" name="defaultAddress" value="defalutAddress">&nbsp;
-                <label for="default">기본 배송지로 등록</label>
-            </div>
-       
-                <br>
-                <button type="submit" class="btn btn-primary">등록</button>
 
             </form>
-          </div>
-          
+
+
         </div>
-      </div>
+
     </div>
+
+
+
+
+<!--------------------------수정 버튼 클릭시 보여질 modal----------------------------------------->
+
+
+<div class="modal" id="updateState">
+    <div class="modal-dialog">
+    <div class="modal-content">
     
-  </div>
-  
-<!------------------------------------------------------------------------------- -->
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h4 class="modal-title">진행상태 변경</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" align="center">
+            
+            <form action="" method="post">
+             
+           
+                <input id="radioC" type="radio" name="salesStatus" value="판매완료" checked> <label for="radioC">판매완료</label><br><br>
+                <input id="radioO" type="radio" name="salesStatus" value="판매중" > <label for="radioO">판매중</label><br><br>
+                <input id="radioR" type="radio" name="salesStatus" value="예약중" > <label for="radioR">예약중</label><br><br>
+                <br>
+            </form>
+
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">변경하기</button>
+        </div>
+          
+        
+    </div>
+    </div>
+</div>
+
+<!-- ============================================================================================ -->
+
+
 
 <!----------------------삭제버튼 클릭시 보여질 modal---------------------------------------->
 
 
-<div class="modal" id="deleteAddress">
+<div class="modal" id="deletePost">
     <div class="modal-dialog">
     <div class="modal-content">
     
@@ -595,13 +519,21 @@ a {
 </div>
 
 <!------------------------------------------------------------------------------------->
-<!--------------------체크박스 선택 안했을 시 보여질 알람------------------------------->
 
 
 
 
 
-<!-------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
 
 <!--********************************CONTENT영역!!!!***********************************-->
 	</div>
