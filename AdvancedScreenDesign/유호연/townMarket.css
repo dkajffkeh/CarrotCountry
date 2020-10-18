@@ -12,8 +12,8 @@ html {
     vertical-align: baseline;
     box-sizing: border-box;
 }
-body {min-height: 100%;}
-img {height:100%; width:100%;}
+body {min-height: 100%; }
+img {height:100%; width:100%; border-radius: 5px;}
 
 /*   <!-- ===============================최 상단 bar  ======================= -->       */
 .navbar_Wrapper {
@@ -103,11 +103,11 @@ img {height:100%; width:100%;}
 /*사이트바*/
  #mainArticle_wrapper {
      width:1200px;
-     height:1350px;
-     border:1px solid black;
+     height:1250px;
+     
      margin:auto;
      margin-top: 20px;
-     margin-bottom: 20px;
+    
      display: flex;
      justify-content: center;
  }
@@ -115,7 +115,7 @@ img {height:100%; width:100%;}
  .mainArticle_sidebar {
      height:100%;
      width:200px;
-     border:1px solid black;
+     
      background-color: rgb(255, 213, 122);
 
  }
@@ -129,21 +129,32 @@ img {height:100%; width:100%;}
 
  }
 
+
  /*사이트바*/
 
  /*오른쪽 아티클 구간*/
+
+ .location_display {
+     width:150px;
+     
+     margin: auto;
+     font-size: 1.5rem;
+    
+ }
+
  .mainArticle_article {
      height:100%;
      width:1000px;
-     border:1px solid black;
-     padding-left: 15px;
+     padding-left: 25px;
+     
+     
  }
-
  .article_frame {
      display: inline-block;
+     margin-right: 15px;
+     margin-bottom: 15px;
      height:300px;
      width:23%;
-     margin:18px 6px 6px 6px;
  }
 
  .img_frame {
@@ -152,7 +163,7 @@ img {height:100%; width:100%;}
  }
 
  .product_title {
-     margin-top: 5px;
+    margin-top: 5px;
     width:100%;
     height:10%;
 }
@@ -203,6 +214,19 @@ img {height:100%; width:100%;}
     font-size: 1rem;
     font-weight: bold;
 }
+
+.page_display {
+    width:1000px;
+    height:40px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
 /*오른쪽 아티클 구간*/
 
 /* 메인 아티클 CSS */
