@@ -13,6 +13,7 @@ html {
     box-sizing: border-box;
 }
 body {min-height: 100%;}
+img {height:100%; width:100%;}
 
 /*   <!-- ===============================최 상단 bar  ======================= -->       */
 .navbar_Wrapper {
@@ -58,7 +59,6 @@ body {min-height: 100%;}
 .menu_bar table tr td {padding-left: 10px; margin-left: 50px}
 
 /* <!-- 검색 구간 --> */
-
 .section_contatiner{
     width: 1200px;
     display: flex;
@@ -77,7 +77,6 @@ body {min-height: 100%;}
 /* <!-- 검색 구간 --> */
 
 /* <!-- 정렬 구현 구간 --> */
-
 #sorter_wrapper {
    
     margin: auto;
@@ -86,16 +85,121 @@ body {min-height: 100%;}
     display: flex;
     justify-content: flex-end;
 }
-
 .sorter_row {
     display: flex;
     width:300px;
     
 }
-
 .sorter_row > p {
     color:darkgray;
     padding-left: 5px;
     margin-top: 35px;
     margin-bottom: 0;
+    cursor: pointer;
 }
+
+/* 메인 아티클 CSS */
+
+ #mainArticle_wrapper {
+     width:1200px;
+     height:1350px;
+     border:1px solid black;
+     margin:auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .mainArticle_sidebar {
+     height:100%;
+     width:200px;
+     border:1px solid black;
+     background-color: rgb(255, 213, 122);
+
+ }
+
+ .mainArticle_article {
+     height:100%;
+     width:1000px;
+     border:1px solid black;
+     padding-left: 15px;
+ }
+
+ .article_frame {
+     display: inline-block;
+     height:300px;
+     width:23%;
+     border:1px solid red;
+     margin:18px 6px 6px 6px;
+ }
+
+ .img_frame {
+     height:60%;
+     width:100%;
+ }
+
+ .product_title {
+    width:100%;
+    height:10%;
+}
+
+.popular_board_title {
+   text-decoration: none;
+   color:black;
+   margin-left:10px;
+   margin-top:2px;
+   font-weight: bold;
+}
+
+.location_area {
+    height:7%;
+    width:96.5%;
+    margin-left: 10px;
+    color:black;
+    
+}
+
+.ratring_counter {   
+    width:100%;
+    height:6%;
+    display: flex;
+    float: left;
+}
+
+.ratring_counter > p {
+    font-size: 0.7rem;
+    display:inline-block;
+    height:100%;
+    margin-left: 10px;
+    color:grey;
+}
+
+.price_display {
+    height:18%;
+    text-align: right;
+    line-height: 250%;
+    margin-right: 10px;;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:orange;
+}
+
+.bottom_font {
+    width:200px;
+    height:20px;
+    margin:auto;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+ 
+ 
+ 
+
+
+
+
+/* 메인 아티클 CSS */
