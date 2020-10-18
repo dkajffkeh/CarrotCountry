@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="물품등록.css">
-    <link rel="stylesheet" href="공통.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script defer src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+  
+
     <style type="text/css">
         a {
             text-decoration: none
@@ -33,32 +35,38 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar_Wrapper">
-        <div class="navbar_sizeWraper_1200px">
-            <div class="user_info_display_sectionWrapper">
-                <div><a href=""><i class="fas fa-user"></i></a></div>
-                <div><a href="">OOO님</a></div>
-            </div>
-            <div class=MainLogo_Wrapper>
-                <div><a href=""><i class="fas fa-carrot"></i></a></div>
-                <div><a href="">당근나라</a></div>
-            </div>
-            <div class="menu_bar">
-                <table>
-                    <tr align="center" class="user_inter_icon">
-                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
-                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
-                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
-                    </tr>
-                    <tr class="user_inter_font">
-                        <td><a href="">로그인</a></td>
-                        <td><a href="">회원가입</a></td>
-                        <td><a href="">마이페이지</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </nav>
     
+    <div id="page_total_wrapper">
+        <form action="">
+        <h5>물품등록</h5>
+        <hr>
+        <div class="product_info_input"></div>
+        <h5>가격입력</h5>
+        <div class="price_info_input"><input type="text" placeholder="가격을 넣어주세요"></div>
+        <h5>상품상태</h5>
+        <div class="product_condition_radio"></div>
+        <h5>거래방법</h5>
+        <div class="interact_type"></div>
+        <h5>주소입력</h5>
+        <div class="location_input"></div>
+        <h5>판매자 정보</h5>
+        <div class="user_info"></div>
+        <button type="button" class="btn btn-success">본인인증</button>
+        <textarea name="content" id="editor"></textarea>
+    </form>
+    </div>
+
+    
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) , {
+
+                removePlugins: ['ImageUpload']
+            } )  
+            .catch( error => {
+                console.error( error );
+            } );
+
+        </script>
 </body>
 </html>
