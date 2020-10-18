@@ -4,8 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!-- 폰트 링크 -->
+      <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
     
+    <style>
+
+          /* ----------------뼈대------------------ */
+          .myPageWrapper{
+            border:1px solid black; /*뼈대 나중에 지움*/
+            width:1200px;
+            margin:auto;
+            height:700px;
+            
+        }
+        .myPageWrapper>div{
+        border:1px solid blue; /*뼈대 나중에 지움*/
+        height:100%; float:left;
+         }
+      
+        .myPageWrapper_content{width:85%;}
+         /* --------------------------------------------- */
+
+         /* 비밀번호 변경 css */
+         .outer{
+           margin-top:50px;
+           margin-left:50px;
+           width:1000px;
+           font-family: 'Nanum Gothic', sans-serif; 
+         }
+         #updatePwd{
+             border:2px solid lightgray;
+             height:400px;
+             width:800px;
+             margin:auto;
+         }
+         button{
+             float:right;
+         }
+         #myPageForm{
+             margin-left:80px;
+             margin-top:40px;
+         }
+         #notice1{color:#fa8500;}
+         .notice2{color:red;}
+    
+  
+    </style>
+</head>
+
+<body>
+
+     <!------------------뼈대떄문에 쓴거 (지워야됨)-------------------------------------->
+     <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+              
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+ 
+
+
+    <div class="myPageWrapper">
+        <div class="myPageWrapper_nav">
+            <div id="myPageWrapper_nav_title" align="center">
+                마이페이지
+            </div>
+            
+            <table id="myPageWrapper_nav_table">
+          
+            </table>
+        </div>
+
+
+
+<!-- ----------------------------------------------------------------------------------->
+
+<!-- # 비밀번호변경 body영역-------------------------->
+
+
+
+    <div class="outer">
+        <br>
+        <h2>비밀번호 변경</h2>
+        <hr color="gray">
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호를 변경해주세요
+        <br><br>
+        <div id="updatePwd">
+            <form action="" method="" id="myPageForm">
+                <p id="notice1">* 비밀번호는 영문, 숫자, 특수문자 포함 6~16자</p><br>
+                현재 비밀번호 : &nbsp;&nbsp;
+                <input type="password" name="userPwd" required>
+                
+                <!-- 잘못입력 시 나타나는 부분 -->
+                <p class="notice2">&nbsp;&nbsp;* 정확히 입력해주세요.</p>
+                
+                <br>
+                새 비밀번호 : &nbsp;&nbsp;
+                <input type="password" name="updatePwd" required>
+
+                <!-- 잘못입력 시 나타나는 부분 -->
+                <p class="notice2">&nbsp;&nbsp;* 정확히 입력해주세요.</p>
+                
+                <br>
+                새 비밀번호 확인 : &nbsp;&nbsp;
+                <input type="password" name="checkPwd" required>
+
+                <!-- 잘못입력 시 나타나는 부분 -->
+                <p class="notice2">&nbsp;&nbsp;* 비밀번호가 다릅니다. 다시 입력하세요.</p>
+                
+                <br>
+
+
+            </form>
+        </div>
+        <button type="submit" class="btn btn-primary">변경하기</button>
+
+
+    </div>
+
+
+
+    <br><br><br>
 </body>
 </html>

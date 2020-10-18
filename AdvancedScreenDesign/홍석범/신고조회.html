@@ -22,15 +22,98 @@
     <div class="wrap">
         <div id="header"></div>
         <div id="content">
-            <div id="content1"></div>
+            <div id="content1">
+              <div class="navWrap">
+                <div id="title" align="center">
+                    관리페이지
+                </div>
+                <table id="table" class="table">
+                    <tr>
+                        <th>회원 관리</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">회원 조회</a></td>
+                    </tr>
+                    <td><a href="">블랙리스트 관리</a></td>
+                    <tr>
+                        <th>게시물 관리</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">게시물 조회</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">블라인드 게시물 관리</a></td>
+                    </tr>
+                    <tr>
+                        <th>신고관리</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">신고 조회</a></td>
+                    </tr>
+                    <tr>
+                        <th>공지사항 관리</th>
+                    </tr>
+                </table>
+        
+            </div>
+            </div>
             <div id="content2">
                 <div id="pageName">
                     <h3>신고조회</h3>
                 </div>
                 <div id="pageContent">
-                    <div id="search"></div>
-                    <div id="board"></div>
-                    <div id="boardNum"></div>
+                    <div id="search">
+                        <input type="text" name="search">
+                        <input type="submit" name="searchButton" value="검색">
+                    </div>
+                    <div id="board">
+                        <form action="">
+                            <table class="table table-sm table-hover">
+                                <thead class="thead">
+                                  <tr class="d-flax">
+                                    <th style="width: 8.33%;">Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>empty</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>content</td>
+                                    <td>content</td>
+                                    <td>content</td>
+                                    <td>content</td>
+                                    <td>content</td>
+                                    <td>content</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                        </form>
+                    </div>
+                    <div id="boardNum" align="center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
