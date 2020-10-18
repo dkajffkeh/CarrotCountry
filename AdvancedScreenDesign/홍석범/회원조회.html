@@ -4,9 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원조회</title>
+    <title>회원관리</title>
+
+    <!-- bootstrap4 stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./CSS/temporary.css">
+
 </head>
+
 <body>
 
+    <div class="wrap">
+        <div id="header"></div>
+        <div id="content">
+            <div id="content1">
+                <div class="navWrap">
+                    <div id="title" align="center">
+                        관리페이지
+                    </div>
+                    <table id="table" class="table">
+                        <tr>
+                            <th>회원 관리</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">회원 조회</a></td>
+                        </tr>
+                        <td><a href="">블랙리스트 관리</a></td>
+                        <tr>
+                            <th>게시물 관리</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">게시물 조회</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">블라인드 게시물 관리</a></td>
+                        </tr>
+                        <tr>
+                            <th>신고관리</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">신고 조회</a></td>
+                        </tr>
+                        <tr>
+                            <th>공지사항 관리</th>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div id="content2">
+                <div id="pageName">
+                    <h3>회원조회</h3>
+                </div>
+                <div id="pageContent">
+                    <div id="search">
+                        <input type="text" name="search">
+                        <input type="submit" name="searchButton" value="검색">
+                    </div>
+                    <div id="board">
+                        <form action="">
+                            <table class="table table-sm table-hover">
+                                <thead class="thead">
+                                    <tr class="d-flax">
+                                        <th style="width: 8.33%;">회원번호</th>
+                                        <th>아이디</th>
+                                        <th>이름</th>
+                                        <th>연락처</th>
+                                        <th>이메일</th>
+                                        <th>생년월일</th>
+                                        <th>가입일</th>
+                                        <th>블랙리스트 유/무</th>
+                                        <th>블랙리스트</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td><input type="button" value="등록"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </form>
+                    </div>
+                    <div id="boardNum" align="center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_1"></div>
+            <div id="footer_2"></div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
