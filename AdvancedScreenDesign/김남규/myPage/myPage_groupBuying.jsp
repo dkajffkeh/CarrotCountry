@@ -29,7 +29,7 @@
 
         height:100%; float:left;
     }
-    .myPageWrapper_content{width:85%; padding:10px;}
+    .myPageWrapper_content{width:85%; padding:40px;}
 
 
 	/* CONTENT영역 시작*/
@@ -46,7 +46,7 @@
         }
 
         .myPageWrapper_content_2{
-            height:30%;
+            height:25%;
             padding:10px;
         }
 
@@ -78,6 +78,9 @@
         .myPageWrapper_content_4{
             height:45%;
         }
+		.myReport_bottom{
+			text-align:center;
+		}
 	/* CONTENT영역 끝*/
 
     </style>
@@ -177,6 +180,11 @@
                 </tbody>
             </table>
         </div>
+
+		<div class="myReport_bottom">
+			<button type="button" class="btn btn-warning">&lt;&nbsp;&nbsp;PREV</button>
+			<button type="button" class="btn btn-warning">NEXT&nbsp;&nbsp;&gt;</button>
+		</div>
 <!--********************************CONTENT영역!!!!***********************************-->
 	</div>
 </div>
