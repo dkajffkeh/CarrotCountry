@@ -1,4 +1,4 @@
-p, a, label, input::placeholder{
+p, a, label, button, input::placeholder{
     font-family: 'Jua', sans-serif;
     margin:0px;
     font-size:15px;
@@ -25,31 +25,7 @@ div{
     box-sizing:border-box;
 }
 
-.login{
-    width:1000px;
-    height:500px;
-    margin-top:-250px;
-    margin-left:-500px;
-    background-color:rgba(0, 0, 0, 0.15);
-    position:absolute;
-    top:50%;
-    left:50%;
-    box-shadow:0px 0px 20px rgb(36, 36, 36);
-    border-radius:20px;
-    padding:10px;
-}
-.signup{
-    width:500px;
-    height:1600px;
-    margin-left:-250px;
-    background-color:rgba(0, 0, 0, 0.15);
-    position:absolute;
-    top:40%;
-    left:50%;
-    box-shadow:0px 0px 20px rgb(36, 36, 36);
-    border-radius:20px;
-    padding:10px;
-}
+
 input, select{
     border:none;
     border-radius:20px;
@@ -75,8 +51,48 @@ input[type="checkbox"], input[type="radio"]{
 input:hover{
     background-color:rgb(253, 200, 131);
 }
+button{
+    border:none;
+    border-radius:20px;
+    height:30px;
+    box-shadow:0px 0px 10px black;
+    background:linear-gradient(45deg,  rgb(169, 240, 151), rgb(255, 205, 151));
+    font-size:20px;
+}
+
+
+button:hover{
+    animation-name:btnEvent;
+    animation-duration:1s;
+    animation-fill-mode:both;
+}
+@keyframes btnEvent{
+    to{
+        color:white;
+        background:linear-gradient(45deg,  rgb(112, 160, 101), rgb(141, 113, 82));
+    }
+}
+
+
+
+
+
+
 
 /********************loginPage 영역********************/
+.login{
+    width:1000px;
+    height:500px;
+    margin-top:-250px;
+    margin-left:-500px;
+    background-color:rgba(0, 0, 0, 0.15);
+    position:absolute;
+    top:50%;
+    left:50%;
+    box-shadow:0px 0px 20px rgb(36, 36, 36);
+    border-radius:20px;
+    padding:10px;
+}
 .login>div{height:100%; float:left;}
 .login_left{
     width:40%;
@@ -104,24 +120,25 @@ input:hover{
     font-size:25px;
 }
 .login_right{
-    background-color:rgb(253, 245, 238);
+    background-color:rgba(255, 255, 255, 0);
     border-radius:20px;
     padding:20px;
     text-align:center;
     box-shadow:0px 0px 10px black;
-    
-}
-.login_right button{
-    border:none;
-    border-radius:20px;
-    height:30px;
-    width:300px;
-    box-shadow:0px 0px 10px black;
-    margin-top:30px;
-    background:linear-gradient(45deg,  rgb(169, 240, 151), rgb(255, 205, 151));
-    font-size:15px;
+
+    animation-name:loginRaise;
+    animation-duration:3s;
+    animation-delay:0.5s;
+    animation-fill-mode:both;
 }
 
+@keyframes loginRaise{
+    to{background-color:rgba(255, 255, 255, 0.7);}
+}
+.login_right button{
+    width:300px;
+    margin-top:30px;
+}
 .login_right button[id="signup"]{
     margin-top:100px;
 }
@@ -129,6 +146,26 @@ input:hover{
 
 
 /********************signupPage 영역********************/
+.signup{
+    width:500px;
+    height:2000px;
+    margin-left:-250px;
+    background-color:rgba(0, 0, 0, 0.15);
+    position:absolute;
+    top:40%;
+    left:50%;
+    box-shadow:0px 0px 20px rgb(36, 36, 36);
+    border-radius:20px;
+    padding:10px;
+
+    animation-name:singupRaise;
+    animation-duration:3s;
+    animation-delay:1.5s;
+    animation-fill-mode:both;
+}
+@keyframes singupRaise{
+    to{top:-35%; background-color:rgba(255, 255, 255, 0.7);}
+}
 .signup div{
     width:100%;
 }
@@ -157,14 +194,8 @@ input:hover{
     margin:0px 0px 30px 0px;
 }
 .signup button{
-    margin:0px 0px 30px 30px;
-    border:none;
-    border-radius:20px;
-    height:30px;
     width:100px;
-    box-shadow:0px 0px 10px black;
-    background:linear-gradient(45deg,  rgb(169, 240, 151), rgb(255, 205, 151));
-    font-size:15px;
+    margin:0px 0px 30px 30px;
 }
 #M{
     margin-right:10px;
@@ -176,10 +207,14 @@ input:hover{
     margin:0px 0px 30px 0px;
 }
 button[type="reset"]{
-    widows: 30%;
+    width: 30%;
 }
 button[type="submit"]{
-    width:55%;
+    width:50%;
 }
 /********************signupPage 영역********************/
+
+
+
+
 

@@ -37,7 +37,7 @@
 
                 <label for="userId">*아이디(4~12자 영문 대 소문자, 숫자)</label>
                 <br>
-                <input type="text" name="userId" id="userId" required minlength="4" maxlength="12"><button type="button"><p>중복 확인</p></button>
+                <input type="text" name="userId" id="userId" required minlength="4" maxlength="12"><button type="button">중복 확인</button>
                 <br>
                 <label for="userPwd">*비밀번호(8~16자 영문, 숫자, 특수문자)</label>
                 <br>
@@ -89,12 +89,31 @@
                 </select>
                 <br>
                 <br>
-                <button type="reset"><p>다시 입력하기</p></button>
-                <button type="submit"><p>회원 가입하기</p></button>
+                <button type="reset" onclick="resetButton();">다시 입력하기</button>
+                <button type="submit">회원 가입하기</button>
 
             </form> 
         </div>
     </div>
+
+<!-- 스크립트 영역 -->
+<!-- 새로고침시 화면 맨위로 -->
+<!-- 다시입력하기 클릭시 reset + 화면새로고침 -->
+<script>
+    function resetButton(){
+        window.location.reload();
+    }
+
+    window.onload = function(){
+        setTimeout(function(){
+            scrollTo(0,0);
+        },100);
+        }
+</script>
+
+
+
+
 
 </body>
 </html>
