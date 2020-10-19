@@ -16,7 +16,38 @@ body {min-height: 100%; }
 
 #page_total_wrapper {
     width:850px;
-    height:100rem;
-    border:1px solid black;
+    height:100%;
+    border:1px solid rgb(252, 255, 72);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top:15px;
     margin:auto;
+    box-shadow: 3px 3px 3px 3px rgb(255, 189, 35);
+}
+
+input[name="Title"] {
+    width:500px;
+}
+
+input[name="price"]{
+    width:250px;
+}
+
+input[name="Title"]:hover {
+    box-shadow: 0.5px 0.5px 2px 2px rgb(195, 195, 195);
+}
+
+select[class="form-control"] {
+    width:150px;
+    margin-right: 10px;
+}
+
+#form1>h5{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    margin-right: 6px;
 }
