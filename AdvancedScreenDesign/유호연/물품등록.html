@@ -61,13 +61,6 @@
                 <label for="Pradio_3">사용감
                     있음</label>
             </div>
-            <h5>거래방법</h5>
-            <div class="interact_type">
-                <input type="radio" name="inter_type" value="택배" id="Iradio_1">
-                <label for="Iradio_1">택배</label>
-                <input type="radio" name="inter_type" value="직거래" id="Iradio_2">
-                <label for="Iradio_2">직거래</label>
-            </div>
             <h5>주소입력</h5>
             <div class="location_input" style="display: flex;">
                 <select name="province" id="" class="form-control">
@@ -85,13 +78,20 @@
                 <h4 style="line-height: 100%; margin:2px; margin-right: 15px;">XXXX  XXXX</h4>
                 <button type="button" class="btn btn-success btn-sm">본인인증</button>
             </div>
-            <div class="image_upload">
-                <div class="preview_frame">
-                    <input type="file" multiple  required>
+            <div id="preview_frame">
+              <div class="image_wrapper">
+                  <img src="../Common/images/맥북.jpg" alt="">
+                  <i class="far fa-times-circle" onclick="deletePic(event);"></i>
                 </div>
             </div>
-            <textarea name="content" id="editor" style="min-height: 500px;"></textarea>
+            <div class="image_upload" style="margin-top:15px ;">
+                    <input type="file" onchange="setThumbnail(event);" name="picture_uploader" id="picture_uploader" multiple  required>
+            </div>
+            <div class="textarea_wrapper" style="margin: 30px 30px 10px 30px;">
+            <textarea name="content" id="editor"></textarea>
+        </div>
             <div class="submit_button_wrapper">
+                <div></div>
                 <button type="submit" form="form1" class="btn btn-success">게시글 올리기</button>
             </div>
         </form>
@@ -106,7 +106,56 @@
             .catch( error => {
                 console.error( error );
             } );
+    </script>
 
-        </script>
+    <script>
+        function setThumbnail(event){
+
+            let preview = document.querySelector("div#preview_frame");
+            
+            while(preview.hasChildNodes()){
+                preview.removeChild(preview.firstChild);
+            }
+
+            for (let image of event.target.files){
+                let reader = new FileReader();
+               
+
+                reader.onload = function(event){
+                    /* <div class="image_wrapper">
+                  <img src="../Common/images/맥북.jpg" alt="">
+                  <i class="far fa-times-circle" onclick="deletePic(event);"></i>
+                </div> */
+                    let preview_Wrapper = document.createElement('div');
+                    preview_Wrapper.setAttribute('class','image_wrapper');
+                    let icon_selector = document.createElement('i');
+                    icon_selector.setAttribute('class','far fa-times-circle');
+                    let img = document.createElement('img');
+                    img.setAttribute("src",event.target.result);
+
+                    preview.appendChild(preview_Wrapper);
+                    preview_Wrapper.appendChild(img);
+                    preview_Wrapper.appendChild(icon_selector);
+     
+                };
+                
+            
+              reader.readAsDataURL(image);
+             
+            }
+        }
+
+        function deletePic(event){
+
+            console.log(event);
+
+        }
+    </script>
+
+    <script>
+
+    </script>
+
+    
 </body>
 </html>
