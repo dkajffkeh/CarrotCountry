@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!-- 폰트 링크 -->
+      <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<style>
+     /* ----------------뼈대------------------ */
+     .myPageWrapper{
+            border:1px solid black; /*뼈대 나중에 지움*/
+            width:1200px;
+            margin:auto;
+            height:1200px;
+           
+            }
+          .myPageWrapper>div{
+          border:1px solid blue; /*뼈대 나중에 지움*/
+          height:100%; float:left;
+          padding-bottom: 500px;
+        
+          }
+         .myPageWrapper_content{width:85%;}
+         /* --------------------------------------------- */
+
+    
+    /* 내게시글 css */
+        .outer{
+           margin-top:50px;
+           margin-left:50px;
+           width:1000px;
+           font-family: 'Do Hyeon', sans-serif;
+         }
+         .list-area{
+            /* border:1px solid black; */
+            text-align:center;
+            width:900px;
+            font-size:20px;
+
+        }
+        .list-area tbody>tr:hover{
+            background:rgb(252, 177, 37);
+            cursor:pointer;
+        }
+
+
+
+</style>
+<body>
+
+      <!------------------뼈대떄문에 쓴거 (지워야됨)-------------------------------------->
+      <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+              
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+ 
+
+
+    <div class="myPageWrapper">
+        <div class="myPageWrapper_nav">
+            <div id="myPageWrapper_nav_title" align="center">
+                마이페이지
+            </div>
+            
+            <table id="myPageWrapper_nav_table">
+          
+            </table>
+        </div>
+
+
+
+<!-- ----------------------------------------------------------------------------------->
+
+<!-- # 내게시글 body영역 -->
+    <div class="outer">
+        <br>
+        <h2>내 게시글</h2>
+        <hr color="gray">
+        <br><br>
+        <table class="list-area" align="center">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th width="300">제목</th>
+                    <th width="200">작성일</th>
+                    <th>조회수</th>
+                    <th></th>
+                    <th>Q&A 답변하기</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- 1-1. 조회결과가 없을경우 -->
+                <!-- <tr>
+                    <td colspan="6">존재하는 게시글이 없습니다.</td>
+                </tr> -->
+
+
+                <!-- 1-2. 조회결과가 있을경우 -->
+
+                <tr>
+                    <td>2</td>
+                    <td>상품명12341234</td>
+                    <td>2020-10-01</td>
+                    <td>3</td>
+                    <td><button>수정</button></td>
+                    <td><button>답변하기</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>상품명43124312</td>
+                    <td>2019-04-04</td>
+                    <td>333</td>
+                    <td><button>수정</button></td>
+                    <td><button>답변하기</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+        
+    </div>
+
+
+
+    
+</body>
+</html>
