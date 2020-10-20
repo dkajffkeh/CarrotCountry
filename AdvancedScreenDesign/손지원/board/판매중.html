@@ -79,8 +79,11 @@
                  width:230px;
                  height:90px;
              }
+             #saleImage:hover {
+                box-shadow:5px 5px 10px 5px gray;
+                cursor:pointer
+             }
              
-  
     </style>
 
 
@@ -157,7 +160,7 @@
 
         </div>
         <br><br><br>
-        <!-- 내용 -->
+        <!-- 상품 내용 -->
         <div id="content">
             <!-- form태그 진행상태값 받아와야해서 넣음 -->
             <form action="" method="post" id="saleStatus">
@@ -172,7 +175,7 @@
                     </tr>
                     <tr align="center">
                         <th rowspan="2">1</th>
-                        <td style = "cursor:pointer;" onClick = " location.href='' "rowspan="2"><div class="img_wraper"><img src="../../Common/images/3.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;" ></div></td>
+                        <td id="saleImage"  onClick = " location.href='' "rowspan="2"><img src="../../Common/images/3.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;" ></td>
                         <td>상품명</td>
                         <td>예약중</td>
                         <td><button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#updateState">수정</button></td>
@@ -187,7 +190,7 @@
                     </tr>
                     <tr align="center">
                         <th rowspan="2">2</th>
-                        <td style = "cursor:pointer;" onClick = " location.href='' " rowspan="2"><div class="img_wraper"><img src="../../Common/images/맥북.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;"></div></td>
+                        <td id="saleImage" onClick = " location.href='' " rowspan="2"><img src="../../Common/images/맥북.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;"></td>
                         <td>상품명</td>
                         <td>판매중</td>
                         <td><button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#updateState">수정</button></td>
@@ -203,7 +206,7 @@
                     </tr>
                     <tr align="center">
                         <th rowspan="2">3</th>
-                        <td style = "cursor:pointer;" onClick = " location.href='' " rowspan="2"><div class="img_wraper"><img src="../../Common/images/1.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;" ></td>
+                        <td id="saleImage"  onClick = " location.href='' " rowspan="2"><img src="../../Common/images/1.jpg" alt="" style= "width:200px; height:150px; border-radius: 20px;" ></td>
                         <td>상품명</td>
                         <td>거래완료</td>
                         <td><button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#updateState">수정</button></td>
