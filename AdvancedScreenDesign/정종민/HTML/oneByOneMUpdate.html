@@ -4,32 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .outer{
+            width:700px;
+            height:900px;
+            margin:auto;
+            margin-top:100px;
+        }
+
+    </style>
 </head>
 <body>
-    <div id="header">
-        <h2>
-            1:1문의 답변 작성
-            <hr>
-        </h2>
-    </div>
-    <div id="content">
-        <!-- 작성자 제목 -->
-        <br>
-        <!-- 다운로드칸 -->
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <ul>
-            <li></li>
-            <li></li>
-        </ul>
+    
+    <div class="outer">
+
+        <h4>1:1문의 답변 작성자</h4>
+        <hr>
+        <b name="title">제목</b>
+        <div align="right">
+            <a href="">다운로드</a>
+        </div>
+
+        <ul class="pagination" align-items="center">
+            *<li>text</li>&nbsp;
+            *<li>text</li>&nbsp;
+            *<li>text</li>
+         </ul>
+
+        <textarea name="" id="" cols="60" rows="10" style="resize: none" ></textarea>
+
         <br>
         <form action="">
-            <!-- 관리자닉 -->
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <b name="answerer">관리자닉</b>
+            <br>
+            <textarea name="" id="" cols="60" rows="10" style="resize: none"></textarea>
             <br><br><br>
-            <input type="submit">
-            <input type="reset">
+            <div align="center">
+                <input type="submit">&nbsp;&nbsp;
+                <input type="reset">
+            </div>
         </form>
     </div>
-    <div id="footer"></div>
+
 </body>
 </html>

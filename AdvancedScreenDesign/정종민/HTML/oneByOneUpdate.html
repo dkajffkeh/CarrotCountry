@@ -4,49 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .outer{
+            width:700px;
+            height:900px;
+            margin:auto;
+            margin-top:100px;
+        }
+
+    </style>
+    
 </head>
 <body>
-    <div id="header">
-        <h2>1:1문의</h2>
-        <hr>
-    </div>
-    <div id="content">
+
+   
+
+    <div class="outer" align="conter">
         <!-- 개인정보 수집 및 이용동의칸 남겨둠 -->
+        <h4>1:1문의</h4>
+        <hr>
         <form action="" name="">
             <ul>
                 <li>
                     <label for="">유형분류*</label>
-                    <select name="" id="">
+                    <select name="oneTo_type1" id="">
                         <option value=""></option>
                     </select>
-                    <select name="" id="">
+                    <select name="oneTo_type2" id="">
                         <option value=""></option>
                     </select>
                 </li>
 
                 <li>
                     <label for="">제목*</label>
-                    <input type="text">
+                    <input type="text" name="title">
                 </li>
 
                 <li>
                     <label for="">글작성*</label><br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="oneTo_content" id="" cols="60" rows="10" placeholder="내용을 입력하세요" style="resize: none;"></textarea>
                 </li>
 
                 <li>
                     <label for="">첨부파일</label>
-                    <input type="url">
-                    <button></button>
+                    <input type="url" name="file_path">
+                    <button>첨부하기</button>
                 </li>
 
             </ul>
-            <input type="submit">
-            <input type="reset">
+            <div align="center">
+                <input type="submit">
+                <input type="reset">
+            </div>
+
         </form>
     </div>
-    <div id="footer">
 
-    </div>
 </body>
 </html>
