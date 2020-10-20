@@ -82,7 +82,7 @@
              
             </div>
             <div class="image_upload" style="margin-top:15px ;">
-                    <input type="file" onchange="setThumbnail(event);" name="pictures" id="picture_uploader" multiple  required>
+                    <input type="file" onchange="setThumbnail(event);" name="pictures" id="picture_uploader" accept="image/*" multiple  required>
             </div>
             <div class="textarea_wrapper" style="margin: 30px 30px 10px 30px;">
             <textarea name="content" id="editor"></textarea>
@@ -146,9 +146,9 @@
               reader.readAsDataURL(image);
              
             };
-        } else {
+        } else if(fileCounter>5) {
             alert("사진은 최대 5개까지만 업로드가 가능합니다.")
-        };
+        } 
         }
         function deletePic(event){
 
