@@ -143,7 +143,6 @@
                     preview_Wrapper.appendChild(icon_selector);
      
                 };
-
               reader.readAsDataURL(image);
              
             };
@@ -154,6 +153,7 @@
         function deletePic(event){
 
             let pictureDelete = event.target.parentNode;
+            pictureDelete.style.display="none";
    
             while(pictureDelete.hasChildNodes()){
                 pictureDelete.removeChild(pictureDelete.firstChild);
