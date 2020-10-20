@@ -79,13 +79,10 @@
                 <button type="button" class="btn btn-success btn-sm">본인인증</button>
             </div>
             <div id="preview_frame">
-              <div class="image_wrapper">
-                  <img src="../Common/images/맥북.jpg" alt="">
-                  <i class="far fa-times-circle" onclick="deletePic(event);"></i>
-                </div>
+             
             </div>
             <div class="image_upload" style="margin-top:15px ;">
-                    <input type="file" onchange="setThumbnail(event);" name="picture_uploader" id="picture_uploader" multiple  required>
+                    <input type="file" onchange="setThumbnail(event);" name="pictures" id="picture_uploader" multiple  required>
             </div>
             <div class="textarea_wrapper" style="margin: 30px 30px 10px 30px;">
             <textarea name="content" id="editor"></textarea>
@@ -112,10 +109,17 @@
         function setThumbnail(event){
 
             let preview = document.querySelector("div#preview_frame");
-            
+            let fileCounter = document.getElementById("picture_uploader").files.length;
+
+           if(fileCounter<=5) {
+          
+          document.getElementById("picture_uploader").addEventListener("change", function() {
+          console.log(this.files.length);
+          });
+          
             while(preview.hasChildNodes()){
                 preview.removeChild(preview.firstChild);
-            }
+            };
 
             for (let image of event.target.files){
                 let reader = new FileReader();
@@ -130,6 +134,7 @@
                     preview_Wrapper.setAttribute('class','image_wrapper');
                     let icon_selector = document.createElement('i');
                     icon_selector.setAttribute('class','far fa-times-circle');
+                    icon_selector.setAttribute('onclick','deletePic(event);');
                     let img = document.createElement('img');
                     img.setAttribute("src",event.target.result);
 
@@ -138,18 +143,22 @@
                     preview_Wrapper.appendChild(icon_selector);
      
                 };
-                
-            
+
               reader.readAsDataURL(image);
              
-            }
+            };
+        } else {
+            alert("사진은 최대 5개까지만 업로드가 가능합니다.")
+        };
         }
-
         function deletePic(event){
 
-            console.log(event);
-
-        }
+            let pictureDelete = event.target.parentNode;
+   
+            while(pictureDelete.hasChildNodes()){
+                pictureDelete.removeChild(pictureDelete.firstChild);
+            };
+        };
     </script>
 
     <script>
