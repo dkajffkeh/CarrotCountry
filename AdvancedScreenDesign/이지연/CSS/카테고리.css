@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar_Wrapper {
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    /* border: 1px solid red; */
+    height: 100%;
+
+}
+
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user_info_display_sectionWrapper {
+    margin-left: 50px;
+}
+
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper>div i {
+    font-size: 2rem;
+}
+
+.menu_bar {
+    margin-right: 50px;
+}
+
+.menu_bar>table tr td a {
+    color: white
+}
+
+.user_inter_font {
+    font-size: 0.7rem;
+}
+
+.menu_bar table tr td {
+
+    padding-left: 10px;
+    margin-left: 50px
+}
+
+
+.wrap{width:1200px;height:800px;margin:auto;}
+#content{height:80%;}
+#footer{height:20%; margin:10px 0px;}
+
+ /* 콘텐트영역의 전반적인 틀 */
+ #content>div{width: 100%; float: left;}
+#content1{height: 10%; padding: 20px;}
+#content2{height: 90%;}
+#content1>div{height: 100%; float: left;}
+#title{width: 30%;}
+#content1_2{width: 70%;}
+
+#title{
+    width: 20%;
+    padding: 7px;
+    background: lightgray;
+    border-radius: 20px;
+}
+#title>h5{font-weight: 900;}
+
+/* 카테고리영역 */
+#content2 ul{list-style: none;}
+#content2 ul li{
+    height: 56px;
+    background: white;
+    padding: 5px 10px;
+    padding-top: 15px;
+}
+#content2 ul li:hover{
+    background: lightgray;
+
+}
+#content2 ul li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 35px;
+    margin-top: 10%;
+}
+
+/* 푸터바의 전반적인 틀 */
+#footer{background-color: #00251a}
