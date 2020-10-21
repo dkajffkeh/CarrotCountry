@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar_Wrapper {
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    /* border: 1px solid red; */
+    height: 100%;
+
+}
+
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user_info_display_sectionWrapper {
+    margin-left: 50px;
+}
+
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper>div i {
+    font-size: 2rem;
+}
+
+.menu_bar {
+    margin-right: 50px;
+}
+
+.menu_bar>table tr td a {
+    color: white
+}
+
+.user_inter_font {
+    font-size: 0.7rem;
+}
+
+.menu_bar table tr td {
+
+    padding-left: 10px;
+    margin-left: 50px
+}
+
+/*
+#header>div{border: 1px solid red;}
+#header>div>div{border: 1px solid red;}
+#content>div{border: 1px solid blue;}
+#content>div>div{border: 1px solid blue;}
+#footer{border: 1px solid green;}
+*/
+.wrap{width:1200px;height:1250px;margin:auto; }
+
+/* 전반적인 큰 틀 (3개의 영역) */
+.wrap>div{height: 100%; }
+#header{height:20%;}
+#content{height:60%;}
+#footer{height:20%; margin:10px 0px;}
+
+/* 헤더영역의 전반적인 틀 */
+#header>div{width:100%;  float: left;}
+#header1{height:30%; position:static;}
+#header2{height:40%; position:static;}
+#header3{height:30%;}
+
+/* 헤더영역의 세부적인 틀 */
+#header1>h1{padding: 10px;}
+hr{padding: 5px;}
+#header2>div{height: 100%; float: left;}
+#header2_1{width: 30%;}
+#header2_2{width: 40%;}
+#searchForm{
+    width:300px;
+    height:30px;
+    margin:auto; 
+    margin-top: 60px;
+    border: 1px solid lightgrey;
+}
+#header2_3{width: 30%;}
+
+/* 검색창 추가적인 스타일 */
+#searchForm>*{height:100%; float:left;}
+#searchForm>input{width:80%;}
+#searchForm>button{width:20%}
+
+/* 콘텐트영역의 전반적인 틀 */
+#content>div{height: 100%; float: left;}
+#content1{ width: 20%;}
+#content2{width: 80%}
+
+
+/* 콘텐트영역의 세부적인 틀 */
+#content2>div{width: 100%;}
+#array{height: 10%;}
+#product{height:90%}
+
+#createPro>button{
+    float:right;
+    margin:25px;
+}
+
+/* 카테고리영역 */
+ul{list-style: none;}
+ul li{
+    height: 58px;
+    background: #3f3f3f;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 15px;
+}
+ul li:hover{
+    background: lightgray;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+
+
+/* 푸터바의 전반적인 틀 */
+#footer{background-color: #00251a}
