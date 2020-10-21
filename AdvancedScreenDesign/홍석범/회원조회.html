@@ -15,6 +15,7 @@
     <!-- 스타일시트 -->
     <link rel="stylesheet" href="./CSS/temporary.css">
     <link rel="stylesheet" href="../Common/Common.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
 
 </head>
 
@@ -52,34 +53,32 @@
         <div id="content">
             <div id="content1">
                 <div class="navWrap">
-                    <div id="title" align="center">
-                        관리페이지
-                    </div>
-                    <table id="table" class="table">
+                    <div id="menuTitle">관리페이지</div>
+                    <table class="navMenu table-hover">
                         <tr>
                             <th>회원 관리</th>
                         </tr>
                         <tr>
-                            <td><a href="">회원 조회</a></td>
+                            <td><a href="">회원조회</a></td>
                         </tr>
-                            <td><a href="">블랙리스트 관리</a></td>
+                            <td><a href="">블랙리스트관리</a></td>
                         <tr>
-                            <th>게시물 관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">게시물 조회</a></td>
+                            <th>게시물관리</th>
                         </tr>
                         <tr>
-                            <td><a href="">블라인드 게시물 관리</a></td>
+                            <td><a href="">게시물조회</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">블라인드게시물 관리</a></td>
                         </tr>
                         <tr>
                             <th>신고관리</th>
                         </tr>
                         <tr>
-                            <td><a href="">신고 조회</a></td>
+                            <td><a href="">신고조회</a></td>
                         </tr>
                         <tr>
-                            <th>공지사항 관리</th>
+                            <th>공지사항관리</th>
                         </tr>
                     </table>
                 </div>
@@ -89,7 +88,7 @@
                     <h3>회원조회</h3>
                 </div>
                 <div id="pageContent">
-                    <form class="form-inline my-2 my-lg-0" id="search">
+                    <form action="" class="form-inline my-2 my-lg-0" id="search">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>

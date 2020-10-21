@@ -62,14 +62,14 @@ div, form, input {
 }
 
 #search {
-    height: 10%;
+    height: 6%;
+    
 }
 
 #board {
-    height: 80%;
+    height: 84%;
 }
 
 #boardNum {
-    align: center;
     height: 10%;
 }
