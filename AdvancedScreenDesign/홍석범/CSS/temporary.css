@@ -56,7 +56,7 @@ div, form, input {
     height: 90%;
 }
 
-#pageContent>div {
+#pageContent>div,form {
     border: 1px solid skyblue;
     width: auto;
 }
@@ -70,5 +70,6 @@ div, form, input {
 }
 
 #boardNum {
+    align: center;
     height: 10%;
 }
