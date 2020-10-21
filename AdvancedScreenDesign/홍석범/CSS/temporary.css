@@ -2,10 +2,6 @@ div, form, input {
     box-sizing: border-box;
 }
 
-#header {
-    border: 1px solid red;
-}
-
 #content>div {
     border: 1px solid blue;
 }
@@ -29,36 +25,8 @@ div, form, input {
     width: 100%;
 }
 
-#header {
-    height: 10%;
-}
-
 #content {
-    height: 80%;
-}
-
-#footer {
-    height: 10%;
-    margin: 10px 0px;
-}
-
-/* 헤더영역 레이아웃 */
-#header>div {
-    width: 100%;
-}
-
-#header1 {
-    height: 30%;
-    position: static
-}
-
-#header2 {
-    height: 40%;
-    position: static;
-}
-
-#header3 {
-    height: 30%;
+    height: 100%;
 }
 
 /* 콘텐트영역 레이아웃 */
