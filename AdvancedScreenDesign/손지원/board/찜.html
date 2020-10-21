@@ -63,6 +63,7 @@
                 width:180px; 
                 height:140px;  
             }
+            #nosSelectAlert{font-size:20px;}
    </style>
 </head>
 <body>
@@ -170,10 +171,41 @@
         </div>
 
         <div align="center" style="width:1800px;">
-            <button type="button" class="btn btn-secondary btn-lg">관심상품 삭제</button>
+            <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#deleteWishlist">관심상품 삭제</button>
         </div>
+
+        <br>
+        <!-- 체크박스 선택안하고 삭제버튼 클릭 시 뜨는 창-->
+
+        <div class="container" id="nosSelectAlert">
+            <div class="alert alert-danger alert-dismissible fade show" align="center">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong> * 상품을 선택 후 삭제해주세요!</strong> 
+            </div>
+        </div>
+
        
 
+    </div>
+
+
+
+    <!-- 체크박스 선택 후 삭제버튼 클릭 시 뜨는 창 -->
+
+    <div class="modal" id="deleteWishlist">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        
+            <!-- Modal body -->
+            <div class="modal-body" align="center">
+               삭제하시겠습니까?
+               <br><br>
+               <button type="button" class="btn btn-primary">확인</button>
+               
+            </div>
+            
+        </div>
+        </div>
     </div>
 </body>
 </html>
