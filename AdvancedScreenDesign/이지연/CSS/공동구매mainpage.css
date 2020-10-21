@@ -18,6 +18,22 @@ a {
     text-decoration: none;
 }
 
+.user_info_display_sectionWrapper a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
 .navbar_Wrapper {
     background-color: orange;
     height: 50px;
@@ -84,8 +100,10 @@ a {
 #header>div>div{border: 1px solid red;}
 #content>div{border: 1px solid blue;}
 #content>div>div{border: 1px solid blue;}
+#content>div>div>div{border: 1px solid blue;}
 #footer{border: 1px solid green;}
 */
+
 .wrap{width:1200px;height:1250px;margin:auto; }
 
 /* 전반적인 큰 틀 (3개의 영역) */
@@ -96,13 +114,12 @@ a {
 
 /* 헤더영역의 전반적인 틀 */
 #header>div{width:100%;  float: left;}
-#header1{height:30%; position:static;}
-#header2{height:40%; position:static;}
+#header1{height:30%;}
+#header2{height:40%;}
 #header3{height:30%;}
 
 /* 헤더영역의 세부적인 틀 */
 #header1>h1{padding: 10px;}
-hr{padding: 5px;}
 #header2>div{height: 100%; float: left;}
 #header2_1{width: 30%;}
 #header2_2{width: 40%;}
@@ -114,6 +131,10 @@ hr{padding: 5px;}
     border: 1px solid lightgrey;
 }
 #header2_3{width: 30%;}
+#createPro>button{
+    float:right;
+    margin:25px;
+}
 
 /* 검색창 추가적인 스타일 */
 #searchForm>*{height:100%; float:left;}
@@ -122,19 +143,63 @@ hr{padding: 5px;}
 
 /* 콘텐트영역의 전반적인 틀 */
 #content>div{height: 100%; float: left;}
-#content1{ width: 20%;}
+#content1{width: 20%;}
 #content2{width: 80%}
 
 
 /* 콘텐트영역의 세부적인 틀 */
 #content2>div{width: 100%;}
-#array{height: 10%;}
-#product{height:90%}
-
-#createPro>button{
-    float:right;
-    margin:25px;
+#array{
+    height: 10%;
+    text-align: right;
+    padding-top: 40px;
 }
+#proTitle{height:10%}
+#proContent{height: 80%;}
+#proTitle>div{height: 100%; float: left;}
+#proTitle{padding: 20px;}
+#regionText{width: 80%; padding-left: 20px;}
+#regionButton{width: 20%;}
+
+#proContent>div{width: 100%; float: left;}
+#proName{height: 20%;}
+#proName>div{
+    height: 100%; 
+    float: left;
+    border-bottom: 1px solid black;
+}
+#proImg{
+    width: 20%;
+    padding: 5px;
+    display: inline-block;
+    padding-left: 50px;
+}
+#proText{width: 50%;}
+#proPrice{width: 30%;}
+#proText-title{padding: 15px; padding-bottom: 0px;}
+#proText-like{padding: 15px;}
+#proText-title>a{text-decoration: none; color: black;}
+#proPrice{
+    text-align: right;
+    padding: 10px;
+}
+#realPrice{
+    color: gray; 
+    padding: 10px; 
+}
+#discount{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+#discountPrice{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
 
 /* 카테고리영역 */
 ul{list-style: none;}
@@ -155,7 +220,12 @@ ul li a{
     color: white;
     margin: auto;
     margin-top: 10%;
-    
+}
+
+/* 정렬 */
+#array a{
+    text-decoration: none;
+    color: black;
 }
 
 
