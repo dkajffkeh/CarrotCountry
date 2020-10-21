@@ -119,26 +119,27 @@
           </div>
     
           <!-- ↓ 조회수 + 찜버튼 ↓ -->   
-     <div class="view_counter_wrapper" 
-          style="display: flex; 
+     <div class="view_counter_wrapper" style="display: flex; 
           justify-content: space-between; 
           align-items: center;
           padding:0px 30px 0px 30px;">
-         <div class="view_counter_display" style="color:darkgray">조회:xx 찜:xx</div>
-         <div class="like_button" 
-              style="width:40px; 
+         <div class="view_counter_display" style="color:darkgray">
+             조회:xx 찜:xx
+         </div>
+         <div class="like_button" style="width:40px; 
                      height:40px; 
-                     background:green; 
                      display: flex; 
                      justify-content: center; 
                      align-items: center;
-                     border-radius: 5px;">
-                     <i class="fas fa-heart" style="color:orange; font-size: larger;">   
-                     </i>
-                    </div>
+                     border-radius: 5px;
+                     "
+                     >
+             <i class="fas fa-heart">
+             </i>
+         </div>
      </div>
      <hr style="border-bottom: 2px solid gray;"> 
-     <!-- ↓ 댓글 구간↓ --> 
+     <!-- ↓ 댓글 입력 구간↓ --> 
      <div class="comment_area" style="width:100%;">
          <form action="#" style="display:flex; 
                                  justify-content: center;">
@@ -165,11 +166,49 @@
                     <input type="checkbox" style="margin-left: 10px;">
                     </div>
          </form>
+
+          <!-- ↓ 댓글 출력 구간↓ -->
+         <div id="comment_display_outer">
          <div class="comment_display">
              <div class="comment_icon"><i class="fas fa-user" style="font-size: 2rem;"></i></div>
-             <div class="comment_content"></div>
-             <div class="comment_condition"></div>
-        </div>
+             <div class="comment_content">
+                 <p class="comment_user_info">[작성자닉네임][주소] </p>
+                 <div class="comment_textarea"></div>
+                 <!-- ↓ 코멘트 버튼  div if 문 달아야함 나중에 ↓ -->
+                 <div class="comment_control_button">
+                     <div class="left_date">업로드 날짜</div>
+                     <div class="right_icons">
+                         <i class="fas fa-pen" title="댓글 수정"></i>
+                         <i class="fas fa-trash" title="댓글 삭제"></i>
+                         <i class="fas fa-exclamation" title="댓글 신고"></i>
+                     </div>
+                 </div>
+             </div>
+             <div class="comment_condition"><i class="fas fa-lock"></i></div>
+         </div>
+
+         
+       <!--
+             JavaScript 로 내려가야함. 
+              <div class="comment_display">
+            <div class="comment_icon"><i class="fas fa-user" style="font-size: 2rem;"></i></div>
+            <div class="comment_content">
+                <p class="comment_user_info">[작성자닉네임][주소] </p>
+                <div class="comment_textarea"></div>
+                
+                <div class="comment_control_button">
+                    <div class="left_date">업로드 날짜</div>
+                    <div class="right_icons">
+                        <i class="fas fa-pen" title="댓글 수정"></i>
+                        <i class="fas fa-trash" title="댓글 삭제"></i>
+                        <i class="fas fa-exclamation" title="댓글 신고"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_condition"><i class="fas fa-lock"></i></div>
+        </div> -->
+        </div> 
+         
      </div>
      <br>
      </div>
