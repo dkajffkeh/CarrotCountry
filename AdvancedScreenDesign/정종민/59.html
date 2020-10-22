@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .outer{
+            width:700px;
+            height:900px;
+            margin:auto;
+            margin-top:100px;
+        }
+        #GPForm table{margin:auto;}
+        #GPForm input{margin:10px;}
+    </style>
+
+</head>
+<body>
+    <!-- 상단네비바 -->
+
+    <div class="outer">
+        <form action="" method="post" id="GPForm">
+            <table>
+                <tr>
+                    <td>대표 이미지 등록 0/4</td>
+                    <td>
+                        <input type="image" name=""><input type="image" name="">
+                        <input type="image" name=""><input type="image" name="">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>상품명</td>
+                    <td><input type="text" name="POST_NAME"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>모집기간</td>
+                    <td><input type="date" name=""></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>최소 인원</td>
+                    <td><input type="number" name=""></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>가격</td>
+                    <td><input type="number" name=""></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>옵션</td>
+                    <td>
+                         <input type="text" value="모르겠어요">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>카테고리 선택</td>
+                    <td>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">디지털/가전</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">가구/인테리어</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">유아동/유아도서</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">생활/가공식품</label>
+                        <br>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">스포츠/레저</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">여성잡화</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">여성의류</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">남선패션/잡화</label>
+                        <br>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">여성의류</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">남선패션/잡화</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">게임/취미</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">뷰티/미용</label>
+                        <br>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">반려동물용품</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">도서/티켓/음반</label>
+                        <input type="checkbox" id="" name="category" value="">
+                        <label for="">기타물품</label>
+                       
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>상세 설명 첨부</td>
+                    <td><textarea name="" id="" cols="30" rows="10"  name=""></textarea></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>입금계좌</td>
+                    <td><input type="text" value="모르겠어요"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>교환 및 환불 방법</td>
+                    <td><textarea name="" id="" cols="30" rows="10"  name=""></textarea></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br><br><br><br>
+            <div align="center">
+                <button type="submit" class="btn btn-warning btn-sm">등록하기</button>
+                <button type="button" class="btn btn-warning btn-sm">뒤로가기</button>
+            </div>
+
+        </form>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
