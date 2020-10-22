@@ -10,38 +10,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-    .outer{
 
+
+    .outer{
         width:700px;
         height:800px;
         margin:auto;
         margin-top:50px;
     }
     .list-area{
-        border:1px solid black;
+        border:1px solid white;
         text-align:center;
-    }
+        }
+    .list-area tbody>tr:hover{
+            background:darkgray;
+            cursor:pointer;
+        }
     
     </style>
 </head>
 <body>
 
      <!--네비바-->
+
+
 <div class="outer">
     <h4>공지사항</h4>
     <hr>
     <div align="right">
-        <button>등록</button><button>삭제</button>
+        <button>등록</button>&nbsp;&nbsp;<button>삭제</button>
         <br><br>
     </div>
     
-    <table class="list-area" align="center">
+    <table class="table table-bordered center list-area" id="list-area">
         <thead>
             <tr>
                 <th>글번호</th>
-                <th width="300"></th>
-                <th></th>
-                <td width="100"></td>
+                <th width="300">제목</th>
+                <th>글쓴이</th>
+                <td width="100">등록일</td>
                 <td>조회수</td>
             </tr>
         </thead>
@@ -75,25 +82,29 @@
     <br><br>
     <div align="center">
         <form action="">
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <select name="" id="" >
+                <option value="">제목</option>
+                <option value="">글쓴이</option>
             </select>
             <input type="text" name="" id="">
-            <button>검색</button>
+            <button class="btn btn-warning btn-sm">검색</button>
         </form>
         <br><br>
     </div>
 
-    <div align="center">
-        <ul class="pagination" align-items="center";>
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
+    <div>
+        <div class="paging-area" align="center">
+
+            
+            <a href="<%=contextPath%>/list.bo?currentPage=<%=pi.getCurrentPage()-1%>">&lt;이전</a>
+
+                <a href="<%=contextPath%>/list.bo?currentPage=<%=p %>">1</a>
+                <a href="<%=contextPath%>/list.bo?currentPage=<%=p %>">2</a>
+ 
+            <a href="<%=contextPath%>/list.bo?currentPage=<%=pi.getCurrentPage()+1%>">다음 &gt;</a>
+            
+         
+        </div>
     </div>
 
 

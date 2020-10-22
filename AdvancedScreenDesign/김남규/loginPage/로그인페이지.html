@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Common.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+        body {
+            border: 1px solid rgba(0, 0, 0, 0);
+            position: relative;
+        }
+
+        #footerbar {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 270px;
+            background-color: #00251a
+        }
+
+        .footerbar_totalWrapper {
+            width: 1200px;
+            height: 100%;
+            border: 1px solid white;
+            margin: auto;
+        }
+
+        .footer_upperWrapper {
+            width: 100%;
+            height: 52px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_upperWrapper>button {
+            margin-left: 40px;
+        }
+
+        .footer_belowWrapper {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+/* ***************** */
+        .wrap{
+            border:5px solid darkgray;
+            width:400px;
+            height:500px;
+            margin:auto;
+            margin-top:100px;
+            margin-bottom:100px;
+            padding:20px;
+        }
+
+
+        .wrap>h1{
+            color:gray;
+            text-align:center;
+            font-size:30px;
+            font-weight:900;
+        }
+        #userId, #userPwd{
+            width:100%;
+            height:40px;
+            border-bottom:1px solid gray;
+        }
+
+        #userCheck{
+            margin-top:30px;
+            width:15px;
+            height:15px;
+        }
+
+        label[for="userCheck"]{
+            font-weight:900;
+        }
+        
+        #loginSubmit{
+            margin:50px 0px 50px 0px;
+            width:100%;
+            height:40px;
+            font-size:20px;
+            color:white;
+        }
+        .button1, .button2, .button3{
+            margin-top:5px;
+            height:35px;
+        }
+        .button1, .button2{
+            width:80%;
+        }
+        .button3{width:90%;}
+
+/* ***************** */
+
+    </style>
+
+    
+</head>
+<body>
+    
+
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+                    <tr class="user_inter_font">
+                        <td><a href="">로그인</a></td>
+                        <td><a href="">회원가입</a></td>
+                        <td><a href="">마이페이지</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+
+
+    <div class="wrap">
+
+        <h1>당근나라</h1>
+        <br>
+        <br>
+        
+        
+        <table border="1px" width="100%">
+            <form action="" method="post">
+                <tr>
+                    <td colspan="2"><input type="text" name="userId" id="userId" placeholder="아이디"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="password" name="userPwd" id="userPwd" placeholder="비밀번호"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- 로그인 오류시 출력문구 입력 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="userCheck" id="userCheck"> <label for="userCheck">로그인 상태 유지</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" id="loginSubmit"  class="btn  btn-warning" value="로그인"></td>
+                </tr>
+            </form>    
+
+            
+            <tr align="center" >
+                <td><a href="" class="button1 btn btn-outline-secondary">아이디 찾기</a></td>
+                <td><a href="" class="button2 btn btn-outline-secondary">비밀번호 찾기</a></td>
+            </tr>
+            <tr align="center" >
+                <td colspan="2"><a href="" class="button3 btn btn-outline-secondary">회원가입</a></td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+
+
+    </div>
+
+
+
+
+
+    <footer id="footerbar">
+        <div class=footerbar_totalWrapper>
+            <div class="footer_upperWrapper">
+                <button>공지사항</button>
+                <button>고객센터</button>
+                <button>개인정보 취급방침</button>
+                <button>회사소개</button>
+            </div>
+            <div class="footer_belowWrapper">
+                <p style="color:white">잡소리</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

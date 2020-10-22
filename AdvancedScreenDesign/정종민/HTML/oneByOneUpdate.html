@@ -30,17 +30,31 @@
         <form action="" name="">
             <ul>
                 <li>
-                    <label for="">유형분류*</label>
-                    <select name="oneTo_type1" id="">
-                        <option value=""></option>
-                    </select>
-                    <select name="oneTo_type2" id="">
-                        <option value=""></option>
-                    </select>
+                    <label for="">유형분류*</label>&nbsp;
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>사이트이용
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">중고구매
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">공동구매
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">기타
+                        </label>
+                      </div>
                 </li>
 
                 <li>
-                    <label for="">제목*</label>
+                    <label for="">제목*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="text" name="title">
                 </li>
 
@@ -52,13 +66,13 @@
                 <li>
                     <label for="">첨부파일</label>
                     <input type="url" name="file_path">
-                    <button>첨부하기</button>
+                    <button class="btn-sm">첨부하기</button>
                 </li>
 
             </ul>
             <div align="center">
-                <input type="submit">
-                <input type="reset">
+                <input type="submit" class="btn btn-warning btn-sm">
+                <input type="reset" class="btn btn-warning btn-sm">
             </div>
 
         </form>

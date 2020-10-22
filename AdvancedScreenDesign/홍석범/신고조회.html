@@ -2,126 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>신고조회</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신고조회</title>
 
-    <!-- bootstrap4 stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- bootstrap4 stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- 스타일시트 -->
-    <link rel="stylesheet" href="./CSS/temporary.css">
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="./CSS/temporary.css">
 
 </head>
 
 <body>
 
-    <div class="wrap">
-        <div id="header"></div>
-        <div id="content">
-            <div id="content1">
-              <div class="navWrap">
-                <div id="title" align="center">
-                    관리페이지
-                </div>
-                <table id="table" class="table">
-                    <tr>
-                        <th>회원 관리</th>
-                    </tr>
-                    <tr>
-                        <td><a href="">회원 조회</a></td>
-                    </tr>
-                    <td><a href="">블랙리스트 관리</a></td>
-                    <tr>
-                        <th>게시물 관리</th>
-                    </tr>
-                    <tr>
-                        <td><a href="">게시물 조회</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="">블라인드 게시물 관리</a></td>
-                    </tr>
-                    <tr>
-                        <th>신고관리</th>
-                    </tr>
-                    <tr>
-                        <td><a href="">신고 조회</a></td>
-                    </tr>
-                    <tr>
-                        <th>공지사항 관리</th>
-                    </tr>
-                </table>
-        
-            </div>
-            </div>
-            <div id="content2">
-                <div id="pageName">
-                    <h3>신고조회</h3>
-                </div>
-                <div id="pageContent">
-                    <div id="search">
-                        <input type="text" name="search">
-                        <input type="submit" name="searchButton" value="검색">
-                    </div>
-                    <div id="board">
-                        <form action="">
-                            <table class="table table-sm table-hover">
-                                <thead class="thead">
-                                  <tr class="d-flax">
-                                    <th style="width: 8.33%;">신고번호</th>
-                                    <th>신고일</th>
-                                    <th>게시글유형</th>
-                                    <th>신고사유</th>
-                                    <th>작성자</th>
-                                    <th>신고자</th>
-                                    <th>비고</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>content</td>
-                                    <td>content</td>
-                                    <td>content</td>
-                                    <td>content</td>
-                                    <td>content</td>
-                                    <td>content</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              
-                        </form>
-                    </div>
-                    <div id="boardNum" align="center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                              <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                  <span aria-hidden="true">&laquo;</span>
-                                </a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                  <span aria-hidden="true">&raquo;</span>
-                                </a>
-                              </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+  <!-- header 영역 들어갈 곳 -->
+
+  <!-- content 영역 -->
+  <div class="wrap">
+    <div id="content">
+      <div id="content1">
+        관리자페이지메뉴.html
+      </div>
+      <div id="content2">
+        <!-- 페이지 제목 -->
+        <div id="pageName">
+          <h3>신고조회</h3>
         </div>
-        <div id="footer">
-            <div id="footer_1"></div>
-            <div id="footer_2"></div>
+        <div id="pageContent">
+          <!-- search -->
+          <form action="" class="form-inline my-2 my-lg-0" id="search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <!-- 신고자 리스트 -->
+          <div id="board">
+            <form action="">
+              <table class="table table-sm table-hover">
+                <thead class="thead">
+                  <tr class="d-flax">
+                    <th width="70">신고번호</th>
+                    <th width="100">신고일</th>
+                    <th width="100">게시글유형</th>
+                    <th width="200">신고사유</th>
+                    <th width="100">작성자</th>
+                    <th width="100">신고자</th>
+                    <th width="50">비고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>20-10-02</td>
+                    <td>게시글</td>
+                    <td>욕설/비방</td>
+                    <td>USER01</td>
+                    <td>USER02</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+          <!-- 페이지 번호 -->
+          <div id="boardNum" align="center">
+            <a href="">&lt; 이전</a>
+
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+
+            <a href="">다음 &gt;</a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+
+  <!-- footer 영역 들어갈 곳 -->
 
 </body>
 

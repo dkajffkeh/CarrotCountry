@@ -47,7 +47,10 @@ div {
 .outer {
     width: 800px;
     margin:auto;
-    background-color: lightgray;
+    border:2px solid rgb(255, 166, 0);
+    border-radius: 15px;
+    box-shadow: 3px 3px 0.5px 0.5px rgb(255, 189, 35);
+    background-color: whitesmoke;
 }
 .carousel-item.active > img {
     border-radius: 10px;
@@ -135,5 +138,18 @@ div {
     min-height: 50px;
 }
 
+.navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+ 
+
+}
+ 
+.nav-item {
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.nav-link {
+    color:black;
+}
 
 /* ? */

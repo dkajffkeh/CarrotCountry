@@ -48,16 +48,71 @@
        상단바  
     -->
 
-    <!-- ↓ 신고 및 토글버튼. ↓ -->
-    <div class="button_wrapper">?</div>
-    <div class="outer" style="padding-top: 20px;">
+    <!-- ↓ 토글버튼. + 신고버튼 부모 div ↓ -->
+    <div class="button_wrapper" 
+         style="width:1000px;
+                max-height: 0px;
+                margin:auto;            
+                " >
+        <nav class="navbar navbar-light navbar-8 white"
+             style="display: inline-flex;
+                    position: relative;
+                    top:26px;
+                    left:888px;
+                    z-index: 1;">
+
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent15"
+                    aria-controls="navbarSupportedContent15" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    style="border:2px solid orange;">
+            <span class="navbar-toggler-icon"></span></button>
+          
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent15"  >
+ 
+              <ul class="navbar-nav mr-auto" >
+                <li class="nav-item active" style="background-color: orange;">
+                  <a class="nav-link" href="#">게시글 수정 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" style="background-color: rgb(219, 91, 91);">
+                  <a class="nav-link" href="#">게시글 삭제</a>
+                </li>
+                <li class="nav-item" style="background-color:lightskyblue;">
+                  <a class="nav-link" href="#">판매완료</a>
+                </li>
+                <li class="nav-item" style="background-color: lightgray; ">
+                    <a class="nav-link" href="#">끌어올리기</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- 신고버튼 -->
+         
+    </div>
+    <div class="outer">
+        <i type="button" 
+        class="fas fa-exclamation-triangle" 
+        data-toggle="modal" 
+        data-target="#myModal"
+        style="position: relative;
+        left:750px;
+        top:40px;
+        z-index: 3;
+        font-size: 2rem;
+        color:rgb(255, 55, 55);
+       ">
+     </i>
         <!-- ↓ 사진 코드. ↓ -->
-     <div class="image_section" style="width:100%;">
+     <div class="image_section" style="width:100%; ">
          <div id="carouselExampleIndicators" 
               class="carousel slide" 
               data-ride="carousel" 
               style="height: 600px; 
-                   width:100%; 
+                   width:100%;
                    margin:auto;
                    ">
              <ol class="carousel-indicators">
@@ -126,6 +181,7 @@
          <div class="view_counter_display" style="color:darkgray">
              조회:xx 찜:xx
          </div>
+    
          <div class="like_button" style="width:40px; 
                      height:40px; 
                      display: flex; 
@@ -134,7 +190,7 @@
                      border-radius: 5px;
                      "
                      >
-             <i class="fas fa-heart">
+             <i class="fas fa-heart">      
              </i>
          </div>
      </div>
@@ -150,10 +206,10 @@
                    placeholder="댓글을 입력해주세요"
                    style="width:500px;
                           ">
-            <button type="button" 
+            <button type="submit" 
                     class="btn btn-warning" 
+                    id="insert_comment"
                     style="font-weight: bold;
-                           
                     ">댓글입력</button>
                     <div class="comment_check_wrapper" style="
                     height:40px; 
@@ -185,9 +241,7 @@
                  </div>
              </div>
              <div class="comment_condition"><i class="fas fa-lock"></i></div>
-         </div>
-
-         
+         </div>    
        <!--
              JavaScript 로 내려가야함. 
               <div class="comment_display">
@@ -207,12 +261,56 @@
             </div>
             <div class="comment_condition"><i class="fas fa-lock"></i></div>
         </div> -->
-        </div> 
-         
+        </div>            
      </div>
      <br>
      </div>
+     <!-- 신고 버튼 모달 -->
 
+       <!-- The Modal -->
+       
+       <div class="modal" id="myModal">
+           
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">유저신고</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <label for="">신고유형:</label>
+              <select name="report_type" id="" style="border:1px solid black; border-radius: 3px;">
+                  <option value="사기">사기</option>
+              </select>
+              <br><br>
+              <label for="">신고 사유</label>
+              <br><textarea name="" id="" cols="64" rows="10" style="resize: none; border:1px solid black; border-radius: 3px;"></textarea>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">신고하기</button>
+            </div>
+            </form>
+          </div>
+        </div>
     
+      </div>
+ <!-- 신고 버튼 모달 -->
+
+    <script>
+        let input = document.getElementById("insert_comment");
+
+        input.addEventListener('click',commentUploader);
+
+        function commentUploader (){
+            console.log("??")
+        }
+/* 작성요망 */
+    </script>
 </body>
 </html>

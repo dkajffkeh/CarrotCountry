@@ -17,111 +17,77 @@
 </head>
 <body>
 
+    <!-- 페이지 header 들어갈 곳 -->
+    
+    <!-- content 영역 -->
     <div class="wrap">
-        <div id="header"></div>
         <div id="content">
             <div id="content1">
-                <div class="navWrap">
-                    <div id="title" align="center">
-                        관리페이지
-                    </div>
-                    <table id="table" class="table">
-                        <tr>
-                            <th>회원 관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">회원 조회</a></td>
-                        </tr>
-                        <td><a href="">블랙리스트 관리</a></td>
-                        <tr>
-                            <th>게시물 관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">게시물 조회</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="">블라인드 게시물 관리</a></td>
-                        </tr>
-                        <tr>
-                            <th>신고관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">신고 조회</a></td>
-                        </tr>
-                        <tr>
-                            <th>공지사항 관리</th>
-                        </tr>
-                    </table>
-
-                </div>
+                <!-- 관리자페이지메뉴 -->
+                관리자페이지메뉴.html
             </div>
             <div id="content2">
                 <div id="pageName">
                     <h3>블랙리스트 관리</h3>
                 </div>
                 <div id="pageContent">
-                    <div id="search">
-                        <input type="text" name="search">
-                        <input type="submit" name="searchButton" value="검색">
-                    </div>
+                    <!-- search -->
+                    <form action="" class="form-inline my-2 my-lg-0" id="search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <!-- 블랙리스트회원 리스트 조회 -->
                     <div id="board">
                         <form action="">
                             <table class="table table-sm table-hover">
                                 <thead class="thead">
                                     <tr class="d-flax">
-                                        <th style="width: 8.33%;">번호</th>
-                                        <th>아이디</th>
-                                        <th>이름</th>
-                                        <th>연락처</th>
-                                        <th>이메일</th>
-                                        <th>신고횟수</th>
-                                        <th>사유</th>
-                                        <th>블랙리스트</th>
+                                        <th width="50">번호</th>
+                                        <th width="100">아이디</th>
+                                        <th width="80">이름</th>
+                                        <th width="150">연락처</th>
+                                        <th width="200">이메일</th>
+                                        <th width="100">신고횟수</th>
+                                        <th width="200">사유</th>
+                                        <th width="100">블랙</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td><input type="button" value="해제"></td>
+                                        <td>1</td>
+                                        <td>USER02</td>
+                                        <td>user02</td>
+                                        <td>010-1234-1234</td>
+                                        <td>asdf@naver.com</td>
+                                        <td>7</td>
+                                        <td>욕설/비방에 따른 제재</td>
+                                        <td>
+                                            <!-- 클릭시 블랙리스트 해제 => 알림 -->
+                                            <a href="" class="btn btn-outline-danger btn-sm">해제</a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
 
                         </form>
                     </div>
+                    <!-- 페이지 번호 -->
                     <div id="boardNum" align="center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <a href="">&lt; 이전</a>
+
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+            
+                        <a href="">다음 &gt;</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div id="footer_1"></div>
-            <div id="footer_2"></div>
-        </div>
     </div>
+
+    <!-- footer 영역 들어갈 곳 -->
     
 </body>
 </html>
