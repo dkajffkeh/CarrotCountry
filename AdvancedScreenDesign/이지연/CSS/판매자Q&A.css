@@ -136,17 +136,17 @@ a {
 }
 
 /* 질문리스트 */
-table{
+#qListTable{
     text-align: center; margin: 100px;
 }
-thead{
+#qListTable>thead{
     background: lightgray;
     text-align: center;
     font-weight: 600;
     height: 50px;
 }
 
-tbody td:hover{cursor: pointer;}
+#qListTable>tbody td:hover{cursor: pointer;}
 
 
 /* 페이징 */
