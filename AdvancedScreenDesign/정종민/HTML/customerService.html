@@ -4,25 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Common/resource/css/Notice.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .outer{
+            width:700px;
+            height:900px;
+            margin:auto;
+            margin-top:50px;
+            margin-left: 70px;
+        }
+        #list-area{
+        border:1px solid white;
+        text-align:center;
+        }
+        #list-area td:hover{
+            background:darkgray;
+            cursor:pointer;
+        }
+    </style>
 </head>
 <body>
-<div class="wrap">
-    <div id="header"></div>
-    <div id="content">
-        <div id="content_1">
-            <!-- nav -->
-        </div>
-        <div id="content_2">
-            <!-- 카테고리&FAQ&1:1문의 -->
-        </div>
-    </div>
-    <div id="footer">
-        <a href="">이용약관</a>
+
+    <div class="outer" id="list-area" align="center">
+        <table class="table table-bordered center"  align="center">
+            <tbody>
+                <tr>
+                    <td>운영정책</td>
+                    <td>계정/인증</td>
+                    <td>구매/판매</td>
+                </tr>
+                <tr>
+                    <td>거래품목</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>이용 제재</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>동네 업체</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <center><b>사용자들이 자주 묻는 질문을 확인해보세요!</b></center>
         <br>
-        <a href="">개인정보이용방침</a>
+
+
+        <table class="table table-bordered" id="list-area">
+            <tr>
+                <td>
+                    Q 당근나라 지역광고에 대래 알려주세요
+                </td>
+            </tr>
+        </table>
     </div>
-</div>
+    <div class="container">
+        <div class="jumbotron" align="center">
+          <h4>안녕하세요</h1>      
+          <a>1:1문의<a>
+        </div>
+      </div>
+      <center><a href="">이용약관</a></center>
+      <br>
+      <center><a href="">개인정보이용방침</a></center>
+      <br><br>
+    
 </body>
 </html>
