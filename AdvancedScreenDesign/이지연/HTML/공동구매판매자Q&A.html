@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
-    <link rel="stylesheet" href="Common.css">
+    <link rel="stylesheet" href="판매자Q&A.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -16,32 +16,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <style>
-        div, form, input{
-           border:1px solid red; 
-           box-sizing:border-box;
-       }
-       .wrap{width:1200px;height:800px;margin:auto;}
-       #content{height:80%;}
-       #footer{height:20%; margin:10px 0px;}
-
-        /* 콘텐트영역의 전반적인 틀 */
-        #content>div{width: 100%; float: left;}
-       #content1{height: 10%;}
-       #content2{height: 20%;}
-       #content3{height: 70%;}
-       #content1>div{height: 100%; float:left}
-       #content2>div{height: 100%; float:left}
-       #content1_1{width: 30%; position: relative;}
-       #content1_2{width: 70%;}
-       #content2_1{width: 20%; position: relative;}
-       #content2_2{width: 80%;}
-
-
-       /* 푸터바의 전반적인 틀 */
-       #footer{background-color: #00251a}
-
-   </style>
+    
 </head>
 <body>
     <nav class="navbar_Wrapper">
@@ -51,8 +26,7 @@
                 <div><a href="">OOO님</a></div>
             </div>
             <div class=MainLogo_Wrapper>
-                <div><a href=""><i class="fas fa-carrot"></i></a></div>
-                <div><a href="">당근나라</a></div>
+                <div><a href=""><img src="resources/images/ttextlogo2.png" alt="" width="200px" height="100%" style="padding: 15px;"></a></div>
             </div>
             <div class="menu_bar">
                 <table>
@@ -72,41 +46,126 @@
     </nav>
     <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
     
+    
     <div class="wrap">
+
         <div id="content1">
-            <div id="content1_1">
-                <b>Q&A(이미지넣기)</b>
+            <div id="title">
+                <h5 align="center">Q & A</h5>
             </div>
-            <div id="content1_2"></div>
         </div>
+
         <div id="content2">
-            <div id="content2_1">
-                <b>상품사진</b>
+            <div id="content2_1" align="center">
+                <img src="resources/images/무선청소기1.jpg" id="proImg" alt="" width="150" height="150">
             </div>
             <div id="content2_2">
-                <b>상품명, 정보</b>
+                <span>[4차공구 진행중!] 어쩌구무선청소기</span>
             </div>
         </div>
+
         <div id="content3">
-            <b>질문리스트 ...</b>
-        </div>
-
-
-
-        <div id="footer" align="center">
-            <div id="footer1">
-                <button class="btn btn-secondary">공지사항</button>
-                <button class="btn btn-secondary"> 고객센터</button>
-                <button class="btn btn-secondary">개인정보 취급방침</button>
-                <button class="btn btn-secondary">회사소개</button>
+            <div id="qList">
+                <table width="1000" class="table-hover">
+                    <thead>
+                        <tr>
+                            <th width="100"><span>No.</span></th>
+                            <th width="300"><span>아이디</span></th>
+                            <th width="500"><span>질문</span></th>
+                            <th width="100"><span>조회수</span></th>
+                            <th width="100"><span>답변하기</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>user01</td>
+                            <td>언제 오나요?</td>
+                            <td>9</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>user02</td>
+                            <td>L사이즈 재입고되나요?</td>
+                            <td>2</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>user03</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>user04</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-dark btn-sm">답변하기</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
             </div>
-    
-            <div id="footer2">
-               <p style="color: white;">footer</p>
+
+            
+            <div id="paginationArea">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul> 
             </div>
+
+
+
         </div>
 
     </div>
+
+    
+    
+    <footer id="footerbar">
+        <div class=footerbar_totalWrapper>
+            <div class="footer_upperWrapper">
+                <button class="btn btn-secondary">공지사항</button>
+                <button class="btn btn-secondary">고객센터</button>
+                <button class="btn btn-secondary">개인정보 취급방침</button>
+                <button class="btn btn-secondary">회사소개</button>
+            </div>
+            <div class="footer_belowWrapper">
+                <p style="color:white">footer</p>
+            </div>
+        </div>
+
+    </footer>
+
+
 
 
 
