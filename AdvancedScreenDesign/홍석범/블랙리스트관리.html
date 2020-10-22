@@ -21,49 +21,17 @@
         <div id="header"></div>
         <div id="content">
             <div id="content1">
-                <div class="navWrap">
-                    <div id="title" align="center">
-                        관리페이지
-                    </div>
-                    <table id="table" class="table">
-                        <tr>
-                            <th>회원 관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">회원 조회</a></td>
-                        </tr>
-                        <td><a href="">블랙리스트 관리</a></td>
-                        <tr>
-                            <th>게시물 관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">게시물 조회</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="">블라인드 게시물 관리</a></td>
-                        </tr>
-                        <tr>
-                            <th>신고관리</th>
-                        </tr>
-                        <tr>
-                            <td><a href="">신고 조회</a></td>
-                        </tr>
-                        <tr>
-                            <th>공지사항 관리</th>
-                        </tr>
-                    </table>
-
-                </div>
+                관리자페이지메뉴.html
             </div>
             <div id="content2">
                 <div id="pageName">
                     <h3>블랙리스트 관리</h3>
                 </div>
                 <div id="pageContent">
-                    <div id="search">
-                        <input type="text" name="search">
-                        <input type="submit" name="searchButton" value="검색">
-                    </div>
+                    <form action="" class="form-inline my-2 my-lg-0" id="search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                     <div id="board">
                         <form action="">
                             <table class="table table-sm table-hover">
@@ -74,7 +42,7 @@
                                         <th>이름</th>
                                         <th>연락처</th>
                                         <th>이메일</th>
-                                        <th>신고횟수</th>
+                                        <th style="width: 8.33%;">신고횟수</th>
                                         <th>사유</th>
                                         <th>블랙리스트</th>
                                     </tr>
@@ -82,13 +50,15 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td>content</td>
-                                        <td><input type="button" value="해제"></td>
+                                        <td>USER02</td>
+                                        <td>user02</td>
+                                        <td>010-1234-1234</td>
+                                        <td>asdf@naver.com</td>
+                                        <td>7</td>
+                                        <td>욕설/비방에 따른 제재</td>
+                                        <td>
+                                            <a href="" class="btn btn-outline-danger">해제</a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
