@@ -19,35 +19,41 @@
 
 <body>
 
+    <!-- 페이지 header 들어갈 곳 -->
+
+    <!-- content 영역 -->
     <div class="wrap">
-        <div id="header"></div>
         <div id="content">
             <div id="content1">
+                <!-- 관리자페이지메뉴 -->
                 관리자페이지메뉴.html
             </div>
             <div id="content2">
+                <!-- 페이지 제목 -->
                 <div id="pageName">
                     <h3>게시글 조회</h3>
                 </div>
                 <div id="pageContent">
-                    <div id="search">
-                        <input type="text" name="search">
-                        <input type="submit" name="searchButton" value="검색">
-                    </div>
+                    <!-- search -->
+                    <form action="" class="form-inline my-2 my-lg-0" id="search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <!-- 게시글 리스트 -->
                     <div id="board">
                         <form action="">
-                            <table class="table table-sm table-hover">
+                            <table class="table table-sm table-hover" align="center">
                                 <thead class="thead">
                                     <tr class="d-flax">
-                                        <th style="width: 8.33%;">게시글번호</th>
-                                        <th>게시글종류</th>
-                                        <th>카테고리</th>
-                                        <th>게시글명</th>
-                                        <th>작성자</th>
-                                        <th>작성일</th>
-                                        <th>조회수</th>
-                                        <th style="width: 8.33%;">블라인드Y/N</th>
-                                        <th>블라인드</th>
+                                        <th width="100">게시글번호</th>
+                                        <th width="100">게시글종류</th>
+                                        <th width="100">카테고리</th>
+                                        <th width="100">게시글명</th>
+                                        <th width="100">작성자</th>
+                                        <th width="100">작성일</th>
+                                        <th width="100">조회수</th>
+                                        <th width="150">블라인드Y/N</th>
+                                        <th width="100">블라인드</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -62,7 +68,8 @@
                                         <td>N</td>
                                         <!-- 블라인드 Y/N이 Y일 경우 안보임 -->
                                         <td>
-                                            <a href="" class="btn btn-outline-danger">등록</a>
+                                            <!-- 클릭시 게시물 블라인드 => 알림 -->
+                                            <a href="" class="btn btn-outline-danger btn-sm">등록</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -70,29 +77,23 @@
 
                         </form>
                     </div>
+                    <!-- 페이지 번호 -->
                     <div id="boardNum" align="center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <a href="">&lt; 이전</a>
+
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+            
+                        <a href="">다음 &gt;</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer영역 들어갈곳 -->
 
 </body>
 
