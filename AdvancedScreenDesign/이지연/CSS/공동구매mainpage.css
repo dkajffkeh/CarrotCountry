@@ -101,16 +101,16 @@ a {
 #content>div{border: 1px solid blue;}
 #content>div>div{border: 1px solid blue;}
 #content>div>div>div{border: 1px solid blue;}
-#footer{border: 1px solid green;}
+#footerbar{border: 1px solid green;}
+#footerbar>div{border: 1px solid green;}
 */
 
 .wrap{width:1200px;height:1250px;margin:auto; }
 
 /* 전반적인 큰 틀 (3개의 영역) */
-.wrap>div{height: 100%; }
 #header{height:20%;}
-#content{height:60%;}
-#footer{height:20%; margin:10px 0px;}
+#content{height:80%;}
+#footer{height:100%; margin:10px 0px;}
 
 /* 헤더영역의 전반적인 틀 */
 #header>div{width:100%;  float: left;}
@@ -236,4 +236,37 @@ a {
 
 
 /* 푸터바의 전반적인 틀 */
-#footer{background-color: #00251a}
+#footerbar {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 270px;
+    background-color: #00251a
+}
+
+.footerbar_totalWrapper {
+    width: 1200px;
+    height: 100%;
+    border-bottom: 1px solid white;
+    margin: auto;
+}
+
+.footer_upperWrapper {
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_upperWrapper>button {
+    margin-left: 40px;
+}
+
+.footer_belowWrapper {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

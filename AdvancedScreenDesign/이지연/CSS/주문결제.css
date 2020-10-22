@@ -17,7 +17,6 @@ html {
 a {
     text-decoration: none;
 }
-
 .user_info_display_sectionWrapper a:link {
     color: black;
     text-decoration: none;
@@ -94,48 +93,86 @@ a {
     margin-left: 50px
 }
 
-
-.wrap{width:1200px;height:800px;margin:auto;}
-#content{height:100%;}
+/*
+div, form, input{
+    border:1px solid red; 
+    box-sizing:border-box;
+}
+*/
+.wrap{width:1200px;height:1500px;margin:auto;}
+#content{height: 100%;}
 #footer{height:100%; margin:10px 0px;}
 
- /* 콘텐트영역의 전반적인 틀 */
- #content>div{width: 100%; float: left;}
-#content1{height: 10%; padding: 20px;}
-#content2{height: 90%;}
-#content1>div{height: 100%; float: left;}
-#title{width: 30%;}
-#content1_2{width: 70%;}
+/* 컨텐트바의 전반적인 틀 */
+#content>div{width: 100%; float: left;}
+#content1{height: 8%; padding: 20px;}
+#content2{height: 42%;}
+#content3{height: 20%;}
+#content4{height: 30%;}
 
+/* 컨텐츠의 세부요소 */
 #title{
     width: 200px;
-    height: 50px;
+    height: 40px;
     padding: 5px;
     background: lightgray;
     border-radius: 20px;
     margin-top: 20px;
 }
 #title>h5{font-weight: 900;}
-
-
-/* 카테고리영역 */
-#content2 ul{list-style: none; padding: 10px;}
-#content2 ul li{
-    height: 55px;
-    background: white;
-    padding: 5px 10px;
-    padding-top: 15px;
+#content>h4{
+    display: inline-block;
+    padding: 30px;
+    padding-bottom: 0px;
+    color: gray;
 }
-#content2 ul li:hover{
+
+/* 배송정보 */
+#deliveryInfo td{padding: 25px;}
+#deliveryInfo td span{font-weight: 600;} 
+#deliveryInfo td input{
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin: 10px;
+} 
+
+/* 상품정보 */
+#proInfo th{
+    height: 80px;
     background: lightgray;
+    text-align: center;
+}
+#proInfo th>span{
+    font-size: 13px;
+    font-weight: 900;
+    display: inline-block;
+    padding: 23px;
+}
+#proInfo td{
+    padding: 20px;
+}
+#proInfo td>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price{
+    text-align: center;
+    font-weight: 600;
+}
 
+/* 결제정보 */
+#purchaseInfo td{padding: 25px;}
+#purchaseInfo td span{font-weight: 600;} 
+#purchaseInfo td input{
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin: 10px;
+} 
+#purchaseBtn{
+    display: inline-block;
+    margin: 30px;
 }
-#content2 ul li a{
-    text-decoration: none;
-    color: black;
-    padding-left: 35px;
-    margin-top: 10%;
-}
+
 
 /* 푸터바의 전반적인 틀 */
 #footerbar {

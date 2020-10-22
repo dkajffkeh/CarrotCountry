@@ -95,47 +95,65 @@ a {
 }
 
 
-.wrap{width:1200px;height:800px;margin:auto;}
-#content{height:100%;}
-#footer{height:100%; margin:10px 0px;}
+/* 전반적인 큰 틀 */
+.wrap{width:1200px;height:600px;margin:auto;}
+#content{height: 100%;}
 
- /* 콘텐트영역의 전반적인 틀 */
- #content>div{width: 100%; float: left;}
-#content1{height: 10%; padding: 20px;}
-#content2{height: 90%;}
-#content1>div{height: 100%; float: left;}
-#title{width: 30%;}
-#content1_2{width: 70%;}
+#content>div{width: 100%; float: left;}
+#content1{height: 15%; padding: 20px;}
+#content2{height: 85%;}
 
+
+/* 컨텐츠의 틀 */
+#content2>div{width: 100%; float: left;}
+#qList{height: 70%;}
+#paginationArea{height: 30%;}
+
+/* 타이틀 (content1) */
 #title{
     width: 200px;
-    height: 50px;
+    height: 40px;
     padding: 5px;
     background: lightgray;
     border-radius: 20px;
     margin-top: 20px;
 }
 #title>h5{font-weight: 900;}
-
-
-/* 카테고리영역 */
-#content2 ul{list-style: none; padding: 10px;}
-#content2 ul li{
-    height: 55px;
-    background: white;
-    padding: 5px 10px;
-    padding-top: 15px;
+#content>h4{
+    display: inline-block;
+    padding: 30px;
+    padding-bottom: 0px;
+    color: gray;
 }
-#content2 ul li:hover{
+/* 질문리스트 */
+#content2{
+    display: inline-block;
+    margin-top: 100px;
+}
+table{
+    text-align: center;
+}
+thead{
     background: lightgray;
+    text-align: center;
+    font-weight: 600;
+    height: 50px;
+}
+
+tbody td:hover{cursor: pointer;}
+
+#writeBtn{
+    display: inline-block;
+    margin: 100px;
+}
+
+/* 페이징 */
+#paginationArea>ul{
+    padding-left: 450px;
 
 }
-#content2 ul li a{
-    text-decoration: none;
-    color: black;
-    padding-left: 35px;
-    margin-top: 10%;
-}
+
+
 
 /* 푸터바의 전반적인 틀 */
 #footerbar {
