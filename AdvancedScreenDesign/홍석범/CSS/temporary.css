@@ -52,6 +52,10 @@ div, form, input {
     height: 10%;
 }
 
+#pageName h3 {
+    padding-top: 10px;
+}
+
 #pageContent {
     height: 90%;
 }
@@ -63,13 +67,21 @@ div, form, input {
 
 #search {
     height: 6%;
-    
+    float: right;
 }
 
 #board {
     height: 84%;
 }
 
+#board table {
+    text-align: center;
+}
+
 #boardNum {
     height: 10%;
+}
+
+#boardNum {
+    padding-top: 20px;
 }
