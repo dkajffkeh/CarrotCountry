@@ -7,10 +7,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
 }
-
-div {
-    box-sizing: border-box;
-}
 .navbar_Wrapper {
     background-color: orange;
     height: 50px;
@@ -115,9 +111,7 @@ div {
     color:darkgray;
 }
 
-.comment_user_info {
-    margin:0px;
-}
+.comment_user_info {margin:0px;}
 
 .right_icons > i {
     font-size: 1.5rem;
@@ -134,22 +128,12 @@ div {
     margin-left: 10px;
 }
 
-.comment_textarea {
-    min-height: 50px;
-}
-
-.navbar.navbar-8 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
- 
-
-}
- 
+.comment_textarea {min-height: 50px;}
+.navbar.navbar-8 .navbar-toggler-icon {background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');}
 .nav-item {
     border-radius: 5px;
     background-color: whitesmoke;
 }
-.nav-link {
-    color:black;
-}
+.nav-link {color:black;}
 
 /* ? */
