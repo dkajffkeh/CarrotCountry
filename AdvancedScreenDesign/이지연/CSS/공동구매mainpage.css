@@ -162,6 +162,7 @@ a {
 #regionText{width: 80%; padding-left: 20px;}
 #regionButton{width: 20%;}
 
+/* 페이징 */
 #paginationArea>ul{
     padding-top: 50px;
     padding-left: 400px;
