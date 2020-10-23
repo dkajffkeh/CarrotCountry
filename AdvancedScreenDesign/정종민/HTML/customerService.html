@@ -8,76 +8,111 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        .outer{
-            width:800px;
-            height:900px;
-            margin: auto;
-            margin-top:50px;
-        }
-        .list-area{
-        border:1px solid white;
-        text-align:center;
-        /* margin-left:70px;  만약에 왼쪽 더 띄우고싶으면 .outer말고 여기 쓰시면돼요*/ 
-        }
-        .list-area td:hover{
-            background:darkgray;
-            cursor:pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="Common/resource/css/customerService.css">
 </head>
 <body>
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+                    <tr class="user_inter_font">
+                        <td><a href="">로그인</a></td>
+                        <td><a href="">회원가입</a></td>
+                        <td><a href="">마이페이지</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
 
-    <div class="outer">
-        <table class="table table-bordered center list-area"  align="center">
+    <div class="CS_content">
+        <div class="content_1">
+            <table class="table table-bordered center list-area"  align="center">
 
-            <tbody>
-                <tr>
-                    <td>운영정책</td>
-                    <td>계정/인증</td>
-                    <td>구매/판매</td>
-                </tr>
-                <tr>
-                    <td>거래품목</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>이용 제재</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>동네 업체</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    
-
+                <tbody>
+                    <tr>
+                        <td>운영정책</td>
+                        <td>계정/인증</td>
+                        <td>구매/판매</td>
+                    </tr>
+                    <tr>
+                        <td>거래품목</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>이용 제재</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>동네 업체</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       <div class="CS_content_2">
         <center><b>사용자들이 자주 묻는 질문을 확인해보세요!</b></center>
         <br>
+       </div>
+       <div class="content_3">
+        <ul class="list-group" id="myList">
+            <li class="list-group-item">공지사항</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth</li>
+          </ul>  
+          <br><br><br>
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
 
-
-        <table class="table table-bordered list-area">
-            <tr>
-                <td>
-                    Q 당근나라 지역광고에 대래 알려주세요
-                </td>
-            </tr>
-        </table>
-    
+       </div>
+       <div class="content_4">
         <div class="container">
             <div class="jumbotron" align="center">
             <h6>안녕하세요</h1>      
             <a href="">1:1문의<a>
             </div>
         </div>
-      <center><a href="">이용약관</a></center>
-      <br>
-      <center><a href="">개인정보이용방침</a></center>
-      <br><br>
+       </div>
+       <div class="content_5">
+        <center><a href="">이용약관</a></center>
+        <br>
+        <center><a href="">개인정보이용방침</a></center>
+        <br><br>
+       </div>
+
+       <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myList li").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+
+
+
+    
+
+
     </div>
     
 </body>
