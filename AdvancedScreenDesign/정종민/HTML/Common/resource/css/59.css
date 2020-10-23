@@ -5,6 +5,9 @@
     
     
 }
+.CS_content input{
+    border: 1px solid black;
+}
 
 #GPForm table{margin:auto;}
 #GPForm input{margin:10px;}

@@ -58,35 +58,40 @@
                 <tr>
                     <td>대표 이미지 등록 0/4</td>
                     <td>
-                        <input type="image" name=""><input type="image" name="">
+                        <input type="image" name="" ><input type="image" name="">
                         <input type="image" name=""><input type="image" name="">
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>상품명</td>
-                    <td><input type="text" name="POST_NAME"></td>
+                    <td><input type="text" name="POST_NAME" class="form-control"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>모집기간</td>
-                    <td><input type="date" name=""></td>
+                    <td><input type="date" name="" class="form-control"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>최소 인원</td>
-                    <td><input type="number" name=""></td>
+                    <td><input type="number" name="" class="form-control"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>가격</td>
-                    <td><input type="number" name=""></td>
+                    <td><input type="number" name="" class="form-control"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>옵션</td>
                     <td>
-                         <input type="text" value="모르겠어요">
+                        <select class="form-control" id="" name="sellist1">
+                            <option>10</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
                     </td>
                     <td></td>
                 </tr>
@@ -132,17 +137,23 @@
                 </tr>
                 <tr>
                     <td>상세 설명 첨부</td>
-                    <td><textarea name="" id="" cols="30" rows="10"  name=""></textarea></td>
+                    <td><textarea class="form-control" rows="5" id="comment" name="text"></textarea></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>입금계좌</td>
-                    <td><input type="text" value="모르겠어요"></td>
+                    <td>
+                        <select class="form-control" id="sel1" name="sellist1">
+                            <option>10</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>교환 및 환불 방법</td>
-                    <td><textarea name="" id="" cols="30" rows="10"  name=""></textarea></td>
+                    <td><textarea class="form-control" rows="5" id="comment" name="text"></textarea></td>
                     <td></td>
                 </tr>
             </table>
