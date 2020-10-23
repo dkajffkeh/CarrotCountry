@@ -22,7 +22,7 @@
     height: 10%;
 }
 .list-area{
-    border:1px solid white;
+    
     text-align:center;
     background: #e9ecef;
     ;
@@ -32,7 +32,13 @@
     cursor:pointer;
 }
 
-
+.list-group li{
+    background: #e9ecef;
+}
+.list-group li:hover{
+    background:darkgray;
+    cursor:pointer
+}
 
 
 
