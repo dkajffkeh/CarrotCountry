@@ -241,7 +241,7 @@
                    placeholder="댓글을 입력해주세요"
                    style="width:500px;
                           ">
-            <button type="submit" 
+            <button type="button" 
                     class="btn btn-warning" 
                     id="insert_comment"
                     style="font-weight: bold;
@@ -276,7 +276,41 @@
                  </div>
              </div>
              <div class="comment_condition"><i class="fas fa-lock"></i></div>
-         </div>    
+         </div>
+         <div class="comment_display">
+            <div class="comment_icon"><i class="fas fa-user" style="font-size: 2rem;"></i></div>
+            <div class="comment_content">
+                <p class="comment_user_info">[작성자닉네임][주소] </p>
+                <div class="comment_textarea"></div>
+                <!-- ↓ 코멘트 버튼  div if 문 달아야함 나중에 ↓ -->
+                <div class="comment_control_button">
+                    <div class="left_date">업로드 날짜</div>
+                    <div class="right_icons">
+                        <i class="fas fa-pen" title="댓글 수정"></i>
+                        <i class="fas fa-trash" title="댓글 삭제"></i>
+                        <i class="fas fa-exclamation" title="댓글 신고"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_condition"><i class="fas fa-lock"></i></div>
+        </div> 
+        <div class="comment_display">
+            <div class="comment_icon"><i class="fas fa-user" style="font-size: 2rem;"></i></div>
+            <div class="comment_content">
+                <p class="comment_user_info">[작성자닉네임][주소] </p>
+                <div class="comment_textarea"></div>
+                <!-- ↓ 코멘트 버튼  div if 문 달아야함 나중에 ↓ -->
+                <div class="comment_control_button">
+                    <div class="left_date">업로드 날짜</div>
+                    <div class="right_icons">
+                        <i class="fas fa-pen" title="댓글 수정"></i>
+                        <i class="fas fa-trash" title="댓글 삭제"></i>
+                        <i class="fas fa-exclamation" title="댓글 신고"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_condition"><i class="fas fa-lock"></i></div>
+        </div>     
         </div>            
      </div>
      <br>
@@ -317,6 +351,7 @@
     
       </div>
 
+      <!-- Footerbar -->
       <footer id="footerbar">
         <div class=footerbar_totalWrapper>
             <div class="footer_upperWrapper">
@@ -331,31 +366,12 @@
         </div>
 
     </footer>
- <!-- 신고 버튼 모달 -->
-     
-             <!-- -> <div class="comment_display">
-          ->  <div class="comment_icon">
-                <i class="fas fa-user" style="font-size: 2rem;"></i>
-            </div>
-            <div class="comment_content">
-                <p class="comment_user_info">[작성자닉네임][주소] </p>
-                <div class="comment_textarea"></div>
-                
-             -   <div class="comment_control_button">
-                    <div class="left_date">업로드 날짜</div>
-                    <div class="right_icons">
-                        <i class="fas fa-pen" title="댓글 수정"></i>
-                        <i class="fas fa-trash" title="댓글 삭제"></i>
-                        <i class="fas fa-exclamation" title="댓글 신고"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="comment_condition"><i class="fas fa-lock"></i></div>
-         </div>  -->
+ 
+        
     <script>
         'use strict'
         let input = document.getElementById("insert_comment");
-        let co_outer = documet.getElementById("comment_display_outer"); 
+        let co_outer = document.getElementById("comment_display_outer"); 
 
         let co_display = document.createElement('div');
         co_display.setAttribute('class',"comment_display")
@@ -381,7 +397,7 @@
 
         let left_date = document.createElement('div');
         left_date.setAttribute('class',"left_date")
-
+        left_date.innerHTML="작성일XXX"
         let right_icons = document.createElement('div');
         right_icons.setAttribute('class',"right_icons");
 
@@ -397,17 +413,36 @@
         co_repo.setAttribute('class',"fas fa-exclamation");
         co_repo.setAttribute('title',"댓글 신고");
 
-        let co_condition = dociment.createElement('div');
+        let co_condition = document.createElement('div');
         co_condition.setAttribute('class',"comment_condition");
-
+        let locker = document.createElement('i');
+        locker.setAttribute('class',"fas fa-lock");
    
         input.addEventListener('click',commentUploader);
  
-
         function commentUploader (){
-            co_outer.appendChild(co_display);
+           co_outer.appendChild(co_display);
+            
+           co_display.appendChild(co_icon);
+           co_icon.appendChild(user_icon);
 
+           co_display.appendChild(co_content);
+           co_content.appendChild(co_user_info);
+           co_user_info.innerHTML="XXXXX XXXX";
+           co_content.appendChild(co_textarea);
+           co_content.appendChild(co_control);
 
+           co_control.appendChild(left_date);
+           co_control.appendChild(right_icons);
+           right_icons.appendChild(co_modify);
+           right_icons.appendChild(co_del);
+           right_icons.appendChild(co_repo);
+
+           co_display.appendChild(co_condition);
+           co_condition.appendChild(locker);
+
+           console.log("실행");
+           
         }
 /* 작성요망 */
     </script>
