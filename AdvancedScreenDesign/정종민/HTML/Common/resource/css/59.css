@@ -5,12 +5,33 @@
     
     
 }
-.CS_content input{
-    border: 1px solid black;
+
+
+.GPForm table{margin:auto;}
+.GPForm table input{
+    margin:10px;
+    padding: 10px;
+}
+#min-count{
+    width: 100;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+    width: 300px;
+}
+input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 150px;
+}
+select {
+    word-wrap: normal;
+    width: 100px;
 }
 
-#GPForm table{margin:auto;}
-#GPForm input{margin:10px;}
+
+
 
 * {
     margin: 0;

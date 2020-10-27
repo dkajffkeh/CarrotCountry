@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="HTML/Common/resource/css/59.css">
+    <link rel="stylesheet" href="Common/resource/css/59.css">
 
 </head>
 <body>
@@ -53,16 +53,20 @@
 
 
     <div class="CS_content">
-        <form action="" method="post" id="GPForm">
+        <form action="" method="post" class="GPForm">
             <table>
                 <tr>
-                    <td>대표 이미지 등록 0/4</td>
-                    <td>
+                    <td width="150">대표 이미지 등록 0/4</td>
+                    <td width="400">
                         <input type="image" name="" ><input type="image" name="">
                         <input type="image" name=""><input type="image" name="">
                     </td>
                     <td></td>
                 </tr>
+
+
+
+
                 <tr>
                     <td>상품명</td>
                     <td><input type="text" name="POST_NAME" class="form-control"></td>
@@ -75,23 +79,43 @@
                 </tr>
                 <tr>
                     <td>최소 인원</td>
-                    <td><input type="number" name="" class="form-control"></td>
+                    <td><input type="text" name="" class="form-control" id="min-count"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>가격</td>
-                    <td><input type="number" name="" class="form-control"></td>
+                    <td><input type="text" name="" class="form-control"></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>옵션</td>
                     <td>
-                        <select class="form-control" id="" name="sellist1">
-                            <option>10</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                          </select>
+                        <input type="text" class="form-control" id="option-add">
+                        <select name="" id="option"> 
+                        </select>
+                    </td>
+                    <td>
+                        <button onclick="add1()" class="btn btn-warning btn-sm">추가</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>주소입력</td>
+                    <td>
+                        <select name="" class="" id="address1">
+                            <option selected>Custom Select Menu</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select> 
+                        <select name="" class="" id="address2">
+                            <option selected>Custom Select Menu</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        
                     </td>
                     <td></td>
                 </tr>
@@ -102,6 +126,7 @@
                         <label for="">디지털/가전</label>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">가구/인테리어</label>
+                        <br>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">유아동/유아도서</label>
                         <input type="checkbox" id="" name="category" value="">
@@ -111,6 +136,7 @@
                         <label for="">스포츠/레저</label>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">여성잡화</label>
+                        <br>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">여성의류</label>
                         <input type="checkbox" id="" name="category" value="">
@@ -120,6 +146,7 @@
                         <label for="">여성의류</label>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">남선패션/잡화</label>
+                        <br>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">게임/취미</label>
                         <input type="checkbox" id="" name="category" value="">
@@ -129,6 +156,7 @@
                         <label for="">반려동물용품</label>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">도서/티켓/음반</label>
+                        <br>
                         <input type="checkbox" id="" name="category" value="">
                         <label for="">기타물품</label>
                        
@@ -137,23 +165,38 @@
                 </tr>
                 <tr>
                     <td>상세 설명 첨부</td>
-                    <td><textarea class="form-control" rows="5" id="comment" name="text"></textarea></td>
+                    <td><textarea class="form-control" rows="5" id="comment" name="text" style="resize: none;"></textarea></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>입금계좌</td>
                     <td>
-                        <select class="form-control" id="sel1" name="sellist1">
-                            <option>10</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select></td>
-                    <td></td>
+                        <input type="text" class="form-control" id="account-add" >
+                        <select name="" id="account">
+                            
+                        </select>
+                    </td>
+                    <td><button onclick="add2()" class="btn btn-warning btn-sm">추가</button></td>
                 </tr>
+
+                <script>
+                    var valOption = 0;
+                    var valAccount = 0;
+                    function add1(){
+                       
+                        $("#option").append("<option value=" + (valOption ++ ) +">" + $("#option-add").val() + "</option>");
+
+                        $("#option-add").val(" ");
+                    }
+                    
+                    function add2(){
+                        $("#account").append("<option value=" + (valAccount ++ ) +">" + $("#account-add").val() + "</option>");
+                    }
+
+                </script>
                 <tr>
                     <td>교환 및 환불 방법</td>
-                    <td><textarea class="form-control" rows="5" id="comment" name="text"></textarea></td>
+                    <td><textarea class="form-control" cols="5" rows="5" id="comment" name="text" style="resize: none;"></textarea></td>
                     <td></td>
                 </tr>
             </table>
@@ -165,7 +208,14 @@
 
         </form>
 
+        
+    
+
     </div>
+
+
     <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
+
+

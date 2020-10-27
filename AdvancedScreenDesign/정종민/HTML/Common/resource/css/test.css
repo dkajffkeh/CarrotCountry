@@ -1,0 +1,244 @@
+.myPageWrapper{
+
+    width:1200px;
+    margin:auto;
+    height:700px;
+/* 			margin-top:10px;
+    margin-bottom:10px; */
+    
+}
+.myPageWrapper>div{
+
+height:100%; float:left;
+}
+.myPageWrapper_content{width:85%; padding:40px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENT영역 시작*/
+.myPageWrapper_content>div{
+    width:100%;
+}
+.myPageWrapper_content_1{
+    height:25%;
+}
+
+.myPageWrapper_content_1>h1{
+    color:gray;
+}
+
+.myPageWrapper_content_2{
+    height:25%;
+    padding:10px;
+}
+
+.myPageWrapper_content_2 p{
+    font-weight:900;
+    font-size:20px;
+}
+.myPageWrapper_content_2>div{
+    float:left;
+    width:25%;
+    height:100%;
+    text-align:center;
+}
+.myPageWrapper_content_3{
+    height:15%;
+}
+.myPageWrapper_contnt_3_1{
+    text-align:center;
+    padding:20px;
+}
+.myPageWrapper_contnt_3_1>span{
+    background-color:rgb(250, 213, 111);
+    border-radius:10px;
+    font-size:40px;
+    padding:10px;
+
+}
+.myPageWrapper_content_4{
+    height:45%;
+}
+.myReport_bottom{
+    text-align:center;
+}
+/* CONTENT영역 끝*/
+
+
+
+
+
+
+
+/*----------headerNavBar include 영역 시작----------*/
+* {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+}
+
+.navbar_Wrapper {
+background-color: orange;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.navbar_sizeWraper_1200px {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 1200px;
+height: 100%;
+
+}
+
+.navbar_sizeWraper_1200px div {
+display: flex;
+justify-content: center;
+
+}
+
+.user_info_display_sectionWrapper {
+margin-left: 50px;
+}
+
+.user_info_display_sectionWrapper div {
+display: flex;
+align-items: center;
+}
+
+.MainLogo_Wrapper {
+display: flex;
+align-items: center;
+}
+
+.MainLogo_Wrapper>div i {
+font-size: 2rem;
+}
+
+.menu_bar {
+margin-right: 50px;
+}
+
+.menu_bar>table tr td a {
+color: white
+}
+
+.user_inter_font {
+font-size: 0.7rem;
+}
+
+.menu_bar table tr td {
+padding-left: 10px;
+
+
+}
+/*----------headerNavBar include 영역 끝----------*/
+/*----------myPageNavBar include 영역 시작----------*/
+.myPageWrapper_nav{
+    /* margin-left:100px; */
+    width:15%;
+}
+#myPageWrapper_nav_title{
+ background:orange;
+ width:100%;
+ height:10%; 
+ color:white;
+ /* margin-top:200px; */
+ font-size:30px;
+ font-weight:900;
+}
+.myPageWrapper_nav th{
+    background:lightgray;
+    padding:5px;
+    text-align:center;
+    font-size:20px;
+}
+.myPageWrapper_nav td{
+    text-align:center;
+    padding:5px;
+    border:1px solid lightgray;
+    
+}
+#myPageWrapper_nav_table{
+    width:100%;
+    height:90%;
+    border:1px solid lightgray;
+}
+.myPageWrapper_nav a{
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+    display:block;
+    width:100%;
+    height:100%;
+}
+.myPageWrapper_nav a:hover{
+    background:cornsilk;
+}
+/*----------myPageNavBar include 영역 끝----------*/
+
+
+
+
+
+/*----------footerbar include 영역 시작----------*/
+#footerbar {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    background-color: #00251a
+}
+
+.footerbar_totalWrapper {
+    width: 1200px;
+    height: 100%;
+    border: 1px solid white;
+    margin: auto;
+}
+
+.footer_upperWrapper {
+    width: 100%;
+    height: 52px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_upperWrapper>button {
+    margin-left: 40px;
+}
+
+.footer_belowWrapper {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----------footerbar include 영역 끝----------*/
