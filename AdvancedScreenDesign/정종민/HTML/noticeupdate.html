@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 부트스트랩 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .outer{
+            width:700px;
+            height:900px;
+            margin:auto;
+            margin-top:100px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <!-- 네비바 -->
+
+    <div class="outer">
+
+            <h4>공지사항 등록</h4>
+            <hr>
+            <form action="">
+                <ul>
+                    <li>
+                        <label for="">
+                            제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <input type="text"  name="notice_title">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">
+                            파일첨부&nbsp;&nbsp;
+                        </label>
+                        <input type="url"  name="file_path">&nbsp;&nbsp;
+                        <button class="btn-sm">첨부하기</button>
+                    </li>
+                    <small>파일 총 용량이 10MB 미만인 경우만 등록 가능합니다 (등록가능파일:jpg,gif,bmp)</small>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">내용</label>
+                        <br>
+                        <textarea name="notice_content" id="" cols="60" rows="10"  name="" style="resize: none">
+                        </textarea>
+                    </li>
+                </ul>
+                <div align="center">
+                    <input type="submit" class="btn btn-warning btn-sm">&nbsp;&nbsp;
+                    <input type="button" value="뒤로가기" class="btn btn-warning btn-sm">
+
+                </div>
+
+            </form>
+            
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>

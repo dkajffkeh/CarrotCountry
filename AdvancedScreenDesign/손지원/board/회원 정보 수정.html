@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!-- 폰트 링크 -->
+      <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+
+          /* ----------------뼈대------------------ */
+          .myPageWrapper{
+            border:1px solid black; /*뼈대 나중에 지움*/
+            width:1200px;
+            margin:auto;
+            height:700px;
+            
+        }
+        .myPageWrapper>div{
+        border:1px solid blue; /*뼈대 나중에 지움*/
+        height:100%; float:left;
+         }
+      
+        .myPageWrapper_content{width:85%;}
+         /* --------------------------------------------- */
+
+         /* 회원 정보 수정 css */
+         .outer{
+           margin-top:50px;
+           margin-left:50px;
+           width:1000px;
+           font-family: 'Nanum Gothic', sans-serif; 
+         }
+         #myPageTable td{
+        width:200px;
+        height:50px;
+            }
+        #myPageForm table{
+        margin:auto;
+         }
+        #updateButton{width:1500px;}
+    
+  
+    </style>
+</head>
+
+<body>
+
+     <!------------------뼈대떄문에 쓴거 (지워야됨)-------------------------------------->
+     <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+              
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+ 
+
+
+    <div class="myPageWrapper">
+        <div class="myPageWrapper_nav">
+            <div id="myPageWrapper_nav_title" align="center">
+                마이페이지
+            </div>
+            
+            <table id="myPageWrapper_nav_table">
+          
+            </table>
+        </div>
+
+
+
+<!-- ----------------------------------------------------------------------------------->
+
+<!-- # 회원 정보 수정 body영역-------------------------->
+
+
+
+
+    <div class="outer">
+        <br>
+        <h2>회원 정보 수정</h2>
+         <hr color="gray">
+         <form action="" method="post" id="myPageForm">
+            <table id="myPageTable">
+                <tr>
+                    <td>* 아이디</td>
+                    <td><input type="text" name="userId" maxlength="12" required value="로그인한사용자의아이디" readonly></td>
+                </tr>
+                <tr>
+                    <td>* 성함</td>
+                    <td><input type="text" name="userName" maxlength="5" required value="로그인한사용자의이름"></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                    <input type="radio" name="gender" id="man" value="남자" ><label for="man">&nbsp;&nbsp;남</label>&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="woman" value="여자"><label for="woman">&nbsp;&nbsp;여</label>&nbsp;&nbsp;
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td><input type="text" name="birthdate" maxlength="6" value="로그인한사용자의생년월일"></td>
+                </tr>
+                <tr>
+                    <td>닉네임</td>
+                    <td><input type="text" name="nickname" required value="로그인한사용자의닉네임"></td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td><input type="text" name="phone" placeholder="(-포함)" value="로그인한사용자의전번"></td> 
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td>
+                        <select style="width:180px;" id="Address_D">
+                            <option value=''>선택하세요</option>
+                            <option value='서울특별시'>서울특별시</option>
+                            <option value='광주광역시'>경기도</option>
+                            <option value='인천광역시'>인천광역시</option>
+                            </select>
+                        </td><br><br>
+                        <td>
+                            <select style="width:180px;" id="Address_D">
+                                <option value=''>선택하세요</option>
+                                <option value='강북구'>강북구</option>
+                                <option value='성북구'>성북구</option>
+                                <option value='성북구'>강남구</option>
+                                </select>
+                        </td>
+                    <td><input style="width:300px;" type="text"></td>
+                </tr>
+                <tr>
+                    <td>E-Mail</td>
+                    <td><input type="email" name="email" value="로그인한사용자의이메일"></td>
+                </tr>
+            </table>
+          
+        </form>
+        <br>
+    
+        <div id="updateButton" align="center">
+        
+            <button type="submit" class="btn btn-primary ">확인</button>
+           
+    
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>

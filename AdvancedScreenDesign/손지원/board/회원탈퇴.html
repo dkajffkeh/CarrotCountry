@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+      <!-- 폰트 링크 -->
+      <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ----------------뼈대------------------ */
+        .myPageWrapper{
+            border:1px solid black; /*뼈대 나중에 지움*/
+            width:1200px;
+            margin:auto;
+            height:1200px;
+           
+            }
+          .myPageWrapper>div{
+          border:1px solid blue; /*뼈대 나중에 지움*/
+          height:100%; float:left;
+          padding-bottom: 500px;
+        
+          }
+         .myPageWrapper_content{width:85%;}
+         /* --------------------------------------------- */
+
+
+         /* 회원탈퇴 css */
+        .outer{
+           margin-top:50px;
+           margin-left:50px;
+           width:1000px;
+           font-family: 'Do Hyeon', sans-serif;
+        }
+    
+        #outer_1{
+        border:3px solid black;
+        padding:10px;
+        width: 800px;
+        height:200px;
+        margin-left:100px;
+        }
+        .outer>span{
+            font-size:20px;
+        }
+        
+        #button{
+            float:right;
+            margin-right:100px;
+        }
+  
+    </style>
+</head>
+<body>
+    <!------------------뼈대떄문에 쓴거 (지워야됨)-------------------------------------->
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+              
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+ 
+
+
+    <div class="myPageWrapper">
+        <div class="myPageWrapper_nav">
+            <div id="myPageWrapper_nav_title" align="center">
+                마이페이지
+            </div>
+            
+            <table id="myPageWrapper_nav_table">
+          
+            </table>
+        </div>
+
+
+
+<!-- ----------------------------------------------------------------------------------->
+
+<!-- # 회원탈퇴 body영역-------------------------->
+
+    <div class="outer">
+        <br>
+        <h1>회원 탈퇴</h1>
+         <hr color="gray">
+         <br><br>
+         <div id="outer_1" align="center">
+             <br><br>
+             <h2>그 동안 서비스를 이용해 주셔서 감사합니다.</h2>
+             <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아래 내용을 잘 확인 하시고 탈퇴해주세요.
+        </div>
+        <br><br><br>
+         <p>
+            <h4>
+             
+                &nbsp;회원을 탈퇴 하시면 모든 정보의 복구가 불가능하며 해당 사이트를 더 이상 이용하실 수 없으며 또한 기존의 모든 개인정보내역이 사라지므로 신중히 결정하시기 바랍니다.<br><br>
+            </h4>
+                <h4 style="color:red"><b>재가입 하셔도 정보가 복구되지 않으니 참고바랍니다.</b></h4>
+         </p>
+        <br><br><br>
+
+
+        
+        <div id="button">
+            <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#deleteForm">회원탈퇴</button>
+        </div>
+    </div>
+        <!------------------회원 탈퇴 버튼 클릭시 보여줄 Modal ----------------------------------------->
+
+
+        
+            <div class="modal" id="deleteForm">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">회원탈퇴</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body" align="center">
+                
+                    <b>
+                        비밀번호를 입력해주세요. <br>
+                    
+                    </b><br>
+    
+                    <form action="" method="post">
+                        
+                        <input type="password" name="userPwd" required>
+                        <br><br>
+                        <button type="submit" class="btn btn-danger btn-sm">탈퇴하기</button>
+                    </form>
+    
+                 </div>
+
+
+
+                  
+                </div>
+              </div>
+            </div>
+            
+    </body>
+</html>

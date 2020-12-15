@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+	<style>
+    .myPageWrapper{
+            width:1200px;
+            margin:auto;
+            height:700px;
+            
+        }
+    .myPageWrapper>div{
+        height:100%; float:left;
+    }
+    .myPageWrapper_content{width:85%; padding:40px;}
+    
+	.myPageWrapper_content_1>h1{
+       color:gray;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 .deliveryContent{
+			 width:100%;
+			 height:80%;
+		 }
+		 .deliveryBottom{
+			 text-align:center;
+			 width:100%;
+			 height:10%;
+			 padding:12px;
+		 }
+
+
+
+
+
+
+/*----------headerNavBar include 영역 시작----------*/
+    * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar_Wrapper {
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+
+}
+
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user_info_display_sectionWrapper {
+    margin-left: 50px;
+}
+
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper>div i {
+    font-size: 2rem;
+}
+
+.menu_bar {
+    margin-right: 50px;
+}
+
+.menu_bar>table tr td a {
+    color: white
+}
+
+.user_inter_font {
+    font-size: 0.7rem;
+}
+
+.menu_bar table tr td {
+    padding-left: 10px;
+
+
+}
+/*----------headerNavBar include 영역 끝----------*/
+/*----------myPageNavBar include 영역 시작----------*/
+.myPageWrapper_nav{
+            /* margin-left:100px; */
+            width:15%;
+        }
+        #myPageWrapper_nav_title{
+         background:orange;
+         width:100%;
+         height:10%; 
+         color:white;
+         /* margin-top:200px; */
+         font-size:30px;
+         font-weight:900;
+        }
+        .myPageWrapper_nav th{
+            background:lightgray;
+            padding:5px;
+            text-align:center;
+            font-size:20px;
+        }
+        .myPageWrapper_nav td{
+            text-align:center;
+            padding:5px;
+            border:1px solid lightgray;
+            
+        }
+        #myPageWrapper_nav_table{
+            width:100%;
+            height:90%;
+            border:1px solid lightgray;
+        }
+        .myPageWrapper_nav a{
+            text-decoration:none;
+            color:black;
+            font-size:20px;
+            display:block;
+            width:100%;
+            height:100%;
+        }
+        .myPageWrapper_nav a:hover{
+            background:cornsilk;
+        }
+/*----------myPageNavBar include 영역 끝----------*/
+/*----------footerbar include 영역 시작----------*/
+        #footerbar {
+            position: absolute;
+            width: 100%;
+            height: 270px;
+            background-color: #00251a
+        }
+
+        .footerbar_totalWrapper {
+            width: 1200px;
+            height: 100%;
+            border: 1px solid white;
+            margin: auto;
+        }
+
+        .footer_upperWrapper {
+            width: 100%;
+            height: 52px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_upperWrapper>button {
+            margin-left: 40px;
+        }
+
+        .footer_belowWrapper {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/*----------footerbar include 영역 끝----------*/
+
+
+
+
+
+
+    </style>
+    
+</head>
+
+<body>
+<!----------headerNavBar 영역 시작---------->
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+                    <tr class="user_inter_font">
+                        <td><a href="">로그인</a></td>
+                        <td><a href="">회원가입</a></td>
+                        <td><a href="">마이페이지</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+<!----------headerNavBar 영역 끝---------->
+
+
+
+    <div class="myPageWrapper">
+ 
+<!----------myPageNavBar include 영역 시작---------->
+       
+<div class="myPageWrapper_nav">
+    <div id="myPageWrapper_nav_title" align="center">
+        마이페이지
+    </div>
+    
+    <table id="myPageWrapper_nav_table">
+    <tr>
+        <th>회원 정보</th>
+    </tr>
+    <tr>
+            <td><a href="">회원 정보 설정</a></td>
+    </tr>
+            <td><a href="">회원 탈퇴</a></td>
+    <tr>
+        <th>관심 상품</th>
+    </tr>
+    <tr>
+        <td><a href="">찜</a></td>
+    </tr>
+    <tr>
+        <td><a href="">최근 본 상품</a></td>
+    </tr>
+    <tr>
+        <th>판매 이력 조회</th>
+    </tr>
+    <tr>
+        <td><a href="">판매 현황</a></td>
+    </tr>
+    <tr>
+        <th>공동구매</th>
+    </tr>
+    <tr>
+        <td><a href="">내 게시글</a></td>
+    </tr>
+    <tr>
+        <td><a href="">진행 현황</a></td>
+    </tr>
+    <tr>
+        <th><a href="">신고내역</a></th>
+    </tr>
+    <tr>
+        <th id="admin"><a href="" >관리자 페이지</a></th>
+    </tr>
+    </table>
+</div>
+<!----------myPageNavBar include 영역 끝---------->
+        
+	<div class="myPageWrapper_content">
+	<div class="myPageWrapper_content_1">
+
+<!--********************************페이지 title***********************************-->
+		<h1>배송 조회</h1>
+<!--********************************페이지 title***********************************-->
+        <hr>
+    </div>
+<!--********************************CONTENT영역!!!!***********************************-->
+
+    <div class="deliveryContent">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>주문번호</th>
+                    <th>상품명</th>
+                    <th>배송사</th>
+                    <th>운송장번호</th>
+                    <th>집화일자</th>
+                    <th>배달일시</th>
+                    <th>상태</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>상품명1</td>
+                    <td>대한통운</td>
+                    <td>123-123-13</td>
+                    <td>2020-02-02</td>
+                    <td>2020-02-03</td>
+                    <td>배송출발</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>상품명2</td>
+                    <td>대한통운</td>
+                    <td>999-99-9999</td>
+                    <td>2020-02-02</td>
+                    <td>2020-03-03</td>
+                    <td>처리중</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="deliveryBottom">
+        <button type="button" class="btn btn-warning">&lt;&nbsp;&nbsp;PREV</button>
+        <button type="button" class="btn btn-warning">NEXT&nbsp;&nbsp;&gt;</button>
+    </div>
+
+
+
+
+
+<!--********************************CONTENT영역!!!!***********************************-->
+	</div>
+</div>
+
+
+
+
+
+
+    <!----------footerbar include 영역 시작---------->
+    <footer id="footerbar">
+        <div class=footerbar_totalWrapper>
+            <div class="footer_upperWrapper">
+                <button>공지사항</button>
+                <button>고객센터</button>
+                <button>개인정보 취급방침</button>
+                <button>회사소개</button>
+            </div>
+            <div class="footer_belowWrapper">
+                <p style="color:white">잡소리</p>
+            </div>
+        </div>
+
+    </footer>
+        <!----------footerbar include 영역 끝---------->
+</body>
+
+</html>

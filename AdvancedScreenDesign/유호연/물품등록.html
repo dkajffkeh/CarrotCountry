@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="물품등록.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+  
+    <style type="text/css">
+        a {
+            text-decoration: none
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="page_total_wrapper">
+        <form action="" id="form1">
+            <h5>물품등록</h5>
+            <hr>
+            <div class="product_info_input" style="display: flex;">
+                <input type="text" name="Title" class="form-control" placeholder="상품명을 입력해주세요"
+                    style="margin-right: 5px;">
+                <select name="Category" id="" class="form-control" style="color:gray">
+                    <option value="home">home</option>
+                </select>
+            </div>
+            <h5>가격입력</h5>
+            <div class="price_info_input" style="display: flex;">
+                <input type="text" class="form-control" name="price" placeholder="가격을 넣어주세요" style="margin-right: 10px;">
+                <h4 style="line-height: 180%;">원</h4>
+            </div>
+            <h5>상품상태</h5>
+            <div class="product_condition_radio">
+                <input type="radio" name="p_condition" value="미개봉" id="Pradio_1">
+                <label for="Pradio_1">미개봉</label>
+                <input type="radio" name="p_condition" value="거의 새것" id="Pradio_2">
+                <label for="Pradio_2">거의 새것</label>
+                <input type="radio" name="p_condition" value="사용감 있음" id="Pradio_3"> 
+                <label for="Pradio_3">사용감
+                    있음</label>
+            </div>
+            <h5>주소입력</h5>
+            <div class="location_input" style="display: flex;">
+                <select name="province" id="" class="form-control">
+                    <option value="서울특별시">서울특별시</option>
+                </select>
+                <select name="district" id="" class="form-control">
+                    <option value="강북구">강북구</option>
+                </select>
+                <select name="town" id="" class="form-control">
+                    <option value="한남동">한남동</option>
+                </select>
+            </div>
+            <h5>판매자 정보</h5>
+            <div class="user_info" style="display: flex; margin-bottom: 30px; ">
+                <h4 style="line-height: 100%; margin:2px; margin-right: 15px;">XXXX  XXXX</h4>
+                <button type="button" class="btn btn-success btn-sm">본인인증</button>
+            </div>
+            <div id="preview_frame">
+             
+            </div>
+            <div class="image_upload" style="margin-top:15px ;">
+                    <input type="file" onchange="setThumbnail(event);" name="pictures" id="picture_uploader" accept="image/*" multiple  required>
+            </div>
+            <div class="textarea_wrapper" style="margin: 30px 30px 10px 30px;">
+            <textarea name="content" id="editor"></textarea>
+        </div>
+            <div class="submit_button_wrapper">
+                <div></div>
+                <button type="submit" form="form1" class="btn btn-success">게시글 올리기</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) , {
+               
+                removePlugins: ['ImageUpload']
+            } )  
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+
+    <script>
+        function setThumbnail(event){
+
+            let preview = document.querySelector("div#preview_frame");
+            let fileCounter = document.getElementById("picture_uploader").files.length;
+
+           if(fileCounter<=5) {
+          
+          document.getElementById("picture_uploader").addEventListener("change", function() {
+          console.log(this.files.length);
+          });
+          
+            while(preview.hasChildNodes()){
+                preview.removeChild(preview.firstChild);
+            };
+
+            for (let image of event.target.files){
+                let reader = new FileReader();
+               
+
+                reader.onload = function(event){
+                    /* <div class="image_wrapper">
+                  <img src="../Common/images/맥북.jpg" alt="">
+                  <i class="far fa-times-circle" onclick="deletePic(event);"></i>
+                </div> */
+                    let preview_Wrapper = document.createElement('div');
+                    preview_Wrapper.setAttribute('class','image_wrapper');
+                    let icon_selector = document.createElement('i');
+                    icon_selector.setAttribute('class','far fa-times-circle');
+                    icon_selector.setAttribute('onclick','deletePic(event);');
+                    let img = document.createElement('img');
+                    img.setAttribute("src",event.target.result);
+
+                    preview.appendChild(preview_Wrapper);
+                    preview_Wrapper.appendChild(img);
+                    preview_Wrapper.appendChild(icon_selector);
+     
+                };
+              reader.readAsDataURL(image);
+             
+            };
+        } else if(fileCounter>5) {
+            alert("사진은 최대 5개까지만 업로드가 가능합니다.")
+        } 
+        }
+        function deletePic(event){
+
+            let pictureDelete = event.target.parentNode;
+            pictureDelete.style.display="none";
+   
+            while(pictureDelete.hasChildNodes()){
+                pictureDelete.removeChild(pictureDelete.firstChild);
+            };
+        };
+    </script>
+
+    <script>
+
+    </script>
+
+    
+</body>
+</html>

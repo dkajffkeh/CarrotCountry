@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.user_info_display_sectionWrapper a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.user_info_display_sectionWrapper a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar_Wrapper {
+    background-color: orange;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_sizeWraper_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    /* border: 1px solid red; */
+    height: 100%;
+
+}
+
+.navbar_sizeWraper_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user_info_display_sectionWrapper {
+    margin-left: 50px;
+}
+
+.user_info_display_sectionWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo_Wrapper>div i {
+    font-size: 2rem;
+}
+
+.menu_bar {
+    margin-right: 50px;
+}
+
+.menu_bar>table tr td a {
+    color: white
+}
+
+.user_inter_font {
+    font-size: 0.7rem;
+}
+
+.menu_bar table tr td {
+
+    padding-left: 10px;
+    margin-left: 50px
+}
+
+/*
+div, form, input{
+    border:1px solid red; 
+    box-sizing:border-box;
+}
+*/
+.wrap{width:1200px;height:1500px;margin:auto;}
+#content{height: 100%;}
+#footer{height:100%; margin:10px 0px;}
+
+/* 컨텐트바의 전반적인 틀 */
+#content>div{width: 100%; float: left;}
+#content1{height: 8%; padding: 20px;}
+#content2{height: 42%;}
+#content3{height: 20%;}
+#content4{height: 30%;}
+
+/* 컨텐츠의 세부요소 */
+#title{
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    background: lightgray;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#title>h5{font-weight: 900;}
+#content>h4{
+    display: inline-block;
+    padding: 30px;
+    padding-bottom: 0px;
+    color: gray;
+}
+
+/* 배송정보 */
+#deliveryInfo td{padding: 25px;}
+#deliveryInfo td span{font-weight: 600;} 
+#deliveryInfo td input{
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin: 10px;
+} 
+
+/* 상품정보 */
+#proInfo th{
+    height: 80px;
+    background: lightgray;
+    text-align: center;
+}
+#proInfo th>span{
+    font-size: 13px;
+    font-weight: 900;
+    display: inline-block;
+    padding: 23px;
+}
+#proInfo td{
+    padding: 20px;
+}
+#proInfo td>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price{
+    text-align: center;
+    font-weight: 600;
+}
+
+/* 결제정보 */
+#purchaseInfo td{padding: 25px;}
+#purchaseInfo td span{font-weight: 600;} 
+#purchaseInfo td input{
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin: 10px;
+} 
+#purchaseBtn{
+    display: inline-block;
+    margin: 30px;
+}
+
+
+/* 푸터바의 전반적인 틀 */
+#footerbar {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 270px;
+    background-color: #00251a
+}
+
+.footerbar_totalWrapper {
+    width: 1200px;
+    height: 100%;
+    border-bottom: 1px solid white;
+    margin: auto;
+}
+
+.footer_upperWrapper {
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_upperWrapper>button {
+    margin-left: 40px;
+}
+
+.footer_belowWrapper {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

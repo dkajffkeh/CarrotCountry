@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="../CSS/주문결제.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+   
+</head>
+<body>
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><img src="../Common/images/ttextlogo2.png" alt="" width="200px" height="100%" style="padding: 15px;"></a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+                    <tr class="user_inter_font">
+                        <td><a href="">로그인</a></td>
+                        <td><a href="">회원가입</a></td>
+                        <td><a href="">마이페이지</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+    
+    <div class="wrap">
+        <div id="content">
+            <div id="content1">
+                <div id="title">
+                    <h5 align="center">주문/결제</h5>
+                </div>
+            </div>
+            <h4>배송정보</h4>
+            <hr style="border-bottom: 2px solid grey; border-top: none;">
+            <div id="content2">
+
+
+                <table id="deliveryInfo">
+                    <tr>
+                        <td align="right"><span>주문자 : </span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span>배송지 선택 : </span></td>
+                        <td><button type="button" class="btn btn-secondary btn-sm">기본 배송지</button>
+                            <button type="button" class="btn btn-secondary btn-sm">신규 배송지</button>
+                            <button type="button" class="btn btn-secondary btn-sm">배송지 목록</button></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span>이름 : </span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span>연락처 : </span></td>
+                        <td><input type="tel" placeholder="(- 포함해서 입력)"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span>주소 : </span></td>
+                        <td><input type="text">
+                            <button type="button" id="address" class="btn btn-secondary btn-sm">우편번호찾기</button><br>
+                            <input type="text" id="particularAddress1"> &nbsp; <input type="text" id="particularAddress2" placeholder="상세주소 입력"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><span>배송시 요청사항 : </span></td>
+                        <td><select id="selbox" name="selbox">
+                            <option value="1">부재시 경비실에 맡겨주세요</option>
+                            <option value="2">배송 전 연락주세요</option>
+                            <option value="direct">직접입력</option>
+                        </select>
+                        
+                        <input type="text" id="selboxDirect" name="selboxDirect"/>
+                    
+    
+                    <script>
+                        $(function(){
+                            $("#selboxDirect").hide();
+                            
+                            $("#selbox").change(function() {
+                            
+                                    if($("#selbox").val() == "direct") {
+                                        $("#selboxDirect").show();
+                                    }  else {
+                                        $("#selboxDirect").hide();
+                                    }
+                                }) 
+                        });
+                    </script></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>상품정보</h4>
+            <hr style="border-bottom: 2px solid grey; border-top: none;">
+            <div id="content3">
+                <table id="proInfo" border="1">
+                    <tr>
+                        <th colspan="2" width=700><span>상품정보/수량</span></th>
+                        <th width=125><span>상품금액</span> </th>
+                        <th width=125><span>할인금액</span></th>
+                        <th width=125><span>할인적용금액</span></th>
+                        <th width=125><span>배송비</span></th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" width="200" height="200">
+                            <img src="../Common/images/무선청소기1.jpg" alt="" width="100%" height="100%">
+                        </td>
+                        <td><p>[4차 공구 진행중!] 무선청소기</p></td>
+                        <td rowspan="3" class="price">1111원</td>
+                        <td rowspan="3" class="price">2222원</td>
+                        <td rowspan="3" class="price">3333원</td>
+                        <td rowspan="3" class="price">444원</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="option" id="option">
+                                <option value="red">red</option>
+                                <option value="black">black</option>
+                                <option value="white">white</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>결제정보</h4>
+            <hr style="border-bottom: 2px solid grey; border-top: none;">
+            <div id="content4">
+                            
+                <table id="purchaseInfo">
+                    <tr>
+                        <td>입금자명 :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>입금계좌 :</td>
+                        <td>
+                            <select name="account" id="account">
+                                <option value="1">:: 입금하실 계좌를 선택해주세요 ::</option>
+                                <option value="2">국민 7777-77-7777</option>
+                                <option value="3">신한 110-110-11-1111</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <b>* 입금정보 확인 후 일치할시, ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</b>
+                <br><br><br><br>
+                <button id="purchaseBtn" class="btn btn-dark">주문하기</button>
+                
+            </div>
+        </div>
+        
+
+
+       
+
+    </div>
+
+    <footer id="footerbar">
+        <div class=footerbar_totalWrapper>
+            <div class="footer_upperWrapper">
+                <button class="btn btn-secondary">공지사항</button>
+                <button class="btn btn-secondary">고객센터</button>
+                <button class="btn btn-secondary">개인정보 취급방침</button>
+                <button class="btn btn-secondary">회사소개</button>
+            </div>
+            <div class="footer_belowWrapper">
+                <p style="color:white">footer</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Common.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+        body {
+            border: 1px solid rgba(0, 0, 0, 0);
+            position: relative;
+        }
+
+        #footerbar {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 270px;
+            background-color: #00251a
+        }
+
+        .footerbar_totalWrapper {
+            width: 1200px;
+            height: 100%;
+            border: 1px solid white;
+            margin: auto;
+        }
+
+        .footer_upperWrapper {
+            width: 100%;
+            height: 52px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_upperWrapper>button {
+            margin-left: 40px;
+        }
+
+        .footer_belowWrapper {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+/* ***************** */
+        .img{
+            margin:auto;
+            margin-top:50px;
+            width:400px;
+            height:80px;
+        }
+        .img>div{
+            /* border:5px solid black; */
+            height:100%;
+            width:50%;
+            float:left;
+            text-align:center;
+        }
+        .imgId{
+            background:orange;
+            border:5px solid darkgray;
+        }
+        .imgPwd{
+            border:5px solid darkgray;
+        }
+
+        .imgPwd:hover{
+            background:orange;
+            border:5px solid darkgray;
+        }
+
+
+
+        .wrap{
+            border:5px solid darkgray;
+            width:400px;
+            height:500px;
+            margin:auto;
+            margin-bottom:100px;
+            padding:20px;
+        }
+
+
+        .wrap>h1{
+            color:gray;
+            text-align:center;
+            font-size:30px;
+            font-weight:900;
+        }
+
+
+        .wrap label{
+            font-weight:900;
+        }
+        .wrap input[type="text"], input[type="password"], input[type="email"]{
+            border:1px solid gray;
+            width:250px;
+            margin-bottom:30px;
+        }
+        #idFindForm{
+            margin-left:50px;
+        }
+        .btn-warning{
+            margin-left:80px;
+            color:white;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    
+
+    <nav class="navbar_Wrapper">
+        <div class="navbar_sizeWraper_1200px">
+            <div class="user_info_display_sectionWrapper">
+                <div><a href=""><i class="fas fa-user"></i></a></div>
+                <div><a href="">OOO님</a></div>
+            </div>
+            <div class=MainLogo_Wrapper>
+                <div><a href=""><i class="fas fa-carrot"></i></a></div>
+                <div><a href="">당근나라</a></div>
+            </div>
+            <div class="menu_bar">
+                <table>
+                    <tr align="center" class="user_inter_icon">
+                        <td><a href=""><i class="fas fa-sign-in-alt"></i></a></td>
+                        <td><a href=""><i class="far fa-plus-square"></i></a></td>
+                        <td><a href=""><i class="fas fa-money-check"></i></a></td>
+                    </tr>
+                    <tr class="user_inter_font">
+                        <td><a href="">로그인</a></td>
+                        <td><a href="">회원가입</a></td>
+                        <td><a href="">마이페이지</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/76c88d06f7.js" crossorigin="anonymous"></script>
+
+    <div class="img">
+
+        <div class="imgId">
+                <img src="resources/images/id.png" width="50%" height="100%">
+        </div>
+        <div class="imgPwd">
+            <a href="">
+                <img src="resources/images/password.png" width="50%" height="100%">
+            </a>
+        </div>
+
+
+    </div>
+    <div class="wrap">
+
+        <h1>아이디 찾기</h1>
+        <br>
+        <br>
+            <form action="" method="post" id="idFindForm">
+                <br>
+                <label for="userName">이름</label>
+                <br>
+                <input type="text" name="userName" id="userName" required minlength="2" maxlength="5">
+                <br>
+                <label for="birthday">생년월일(숫자 6자리)</label>
+                <br>
+                <input type="text" name="birthday" id="birthday" required minlength="6" maxlength="6">
+                <br>
+                <label for="phone">전화번호(-포함 입력)</label>
+                <br>
+                <input type="text" name="phone" id="phone" required minlength="13" maxlength="13">
+                <br>
+                <a href="" class="btn btn-secondary">취소</a>
+                <button type="submit" class="btn btn-warning">아이디찾기</button>
+            </form>
+        <br>
+        <br>
+
+
+
+    </div>
+
+
+
+
+
+    <footer id="footerbar">
+        <div class=footerbar_totalWrapper>
+            <div class="footer_upperWrapper">
+                <button>공지사항</button>
+                <button>고객센터</button>
+                <button>개인정보 취급방침</button>
+                <button>회사소개</button>
+            </div>
+            <div class="footer_belowWrapper">
+                <p style="color:white">잡소리</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
